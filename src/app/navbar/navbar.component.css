@@ -1,22 +1,59 @@
-#navbar {
-  color: white;
-  background-color: black;
+.navbar {
+  letter-spacing: .025em;
+  background-color: var(--main-theme-bgcolor);
   overflow: hidden;
-  
+  height: 12vh;
 }
 
+.fixed-top {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+}
+.nav-item {
+    font-family: Open Sans,sans-serif;
+    font-size: 2.5vh;
+    font-weight: 400;
+    display: var(--desktop-show);
+    text-align: right;
+    padding-right: 1em;
+    padding-top: 4.6vh;
+    text-decoration: none;
+    float: right;
+}
 #logo {
-  font-family: 'Ranga', cursive;
-  font-size: 1.4em;
+  font-family: 'Lobster Two', cursive;
+  font-size: 5vh;
+  display: block;
+  text-align: left;
+  padding-top: 2.5vh;
+  padding-left: 1em;
+  text-decoration: none;
+
 }
 
 #menu {
   color:white; 
   float: right; 
-  font-size: 1.2em;
+  font-size: 4.5vh;
+  padding-right: 2.3vh;
+  padding-top: 2vh;
+  display: var(--mobile-show);
 }
-.fill-space {
-  /* // This fills the remaining space, by using flexbox.
-  // Every toolbar row uses a flexbox row layout. */
-  flex: 1 1 auto;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+}
+
+a{
+  color: var(--main-theme-color);;
 }

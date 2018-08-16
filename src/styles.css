@@ -1,4 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-html, body { height: 100%; }
+
+/* Mobile Settings */
+@media only screen and (max-width: 735px) {
+    :root {
+        background-color: red;
+        --mobile-show: block;
+        --desktop-show: none;
+    }
+}
+
+/* Desktop/Tablet Settings */
+@media only screen and (min-width: 735px) {
+    :root {
+        background-color: lightblue;
+        --mobile-show: none;
+        --desktop-show: block;
+        }
+}
+
+
+:root {
+    --main-theme-bgcolor: black;
+    --main-theme-color: white;
+}
+
 body { margin: 0; font-family: 'Roboto', sans-serif; }
+img { 
+    float: left;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 12vh;
+} 
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
