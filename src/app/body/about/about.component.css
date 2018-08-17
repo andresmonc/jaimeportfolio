@@ -1,10 +1,13 @@
-#aboutmephoto {
-    border-radius: 50%;
-    max-width:  100%;
-    height: auto;
-    display: block;
+#about {
+    max-width: 100% !important;
+    height: 1200px;
+    margin: 3em;
 }
 
-.about-container {
-    background-color: white;
+
+
+#aboutphoto {
+    float: none;
+    border-radius: 50%;
+
 }

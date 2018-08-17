@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n<main>\n    <app-body></app-body>\n    <app-body></app-body>\n    <app-body></app-body>\n</main>\n<footer>\n    <app-footer></app-footer>\n</footer>"
+module.exports = "<nav>\r\n    <app-navbar></app-navbar>\r\n</nav>\r\n<main>\r\n    <app-cover></app-cover>\r\n    <app-about></app-about>\r\n    <app-contact></app-contact>\r\n</main>\r\n<footer>\r\n    <!-- <app-footer></app-footer> -->\r\n</footer>"
 
 /***/ }),
 
@@ -93,13 +93,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
-/* harmony import */ var _body_body_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./body/body.component */ "./src/app/body/body.component.ts");
-/* harmony import */ var _body_about_about_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./body/about/about.component */ "./src/app/body/about/about.component.ts");
-/* harmony import */ var _body_contact_contact_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./body/contact/contact.component */ "./src/app/body/contact/contact.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
+/* harmony import */ var _body_about_about_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./body/about/about.component */ "./src/app/body/about/about.component.ts");
+/* harmony import */ var _body_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./body/contact/contact.component */ "./src/app/body/contact/contact.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _body_cover_cover_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./body/cover/cover.component */ "./src/app/body/cover/cover.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -114,26 +113,24 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_4__["NavbarComponent"],
-                _body_body_component__WEBPACK_IMPORTED_MODULE_5__["BodyComponent"],
-                _body_about_about_component__WEBPACK_IMPORTED_MODULE_6__["AboutComponent"],
-                _body_contact_contact_component__WEBPACK_IMPORTED_MODULE_7__["ContactComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__["FooterComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
+                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_3__["NavbarComponent"],
+                _body_about_about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"],
+                _body_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"],
+                _body_cover_cover_component__WEBPACK_IMPORTED_MODULE_7__["CoverComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -150,7 +147,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "#about {\r\n    max-width: 100% !important;\r\n    height: 1200px;\r\n    margin: 3em;\r\n}\r\n\r\n\r\n\r\n#aboutphoto {\r\n    float: none;\r\n    border-radius: 50%;\r\n\r\n}\r\n"
 
 /***/ }),
 
@@ -161,7 +158,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  about works!\n</p>\n"
+module.exports = "<div id=\"about\">\r\n    <div id=\"aboutphoto-container\">\r\n        <img id=\"aboutphoto\" src=\"http://via.placeholder.com/180x180\">\r\n    </div>  \r\n    <div id=\"about-text\">\r\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam non mollitia inventore velit blanditiis ex, temporibus modi\r\n        possimus labore, hic placeat iusto in eligendi culpa alias obcaecati deserunt itaque optio! Lorem ipsum dolor sit\r\n        amet consectetur adipisicing elit. Consectetur, voluptatibus necessitatibus vitae commodi ducimus accusantium provident\r\n        quisquam beatae id aspernatur dolores voluptatum labore facere distinctio fugit adipisci rerum. Laboriosam, nobis!\r\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus aperiam iste quaerat! Numquam,\r\n        inventore nobis rem nesciunt esse ratione, laboriosam dignissimos id, incidunt ad quo ducimus repellendus animi fugit.\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -200,69 +197,6 @@ var AboutComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], AboutComponent);
     return AboutComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/body/body.component.css":
-/*!*****************************************!*\
-  !*** ./src/app/body/body.component.css ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/body/body.component.html":
-/*!******************************************!*\
-  !*** ./src/app/body/body.component.html ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<app-about></app-about>\n<app-contact></app-contact>"
-
-/***/ }),
-
-/***/ "./src/app/body/body.component.ts":
-/*!****************************************!*\
-  !*** ./src/app/body/body.component.ts ***!
-  \****************************************/
-/*! exports provided: BodyComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BodyComponent", function() { return BodyComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var BodyComponent = /** @class */ (function () {
-    function BodyComponent() {
-    }
-    BodyComponent.prototype.ngOnInit = function () {
-    };
-    BodyComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-body',
-            template: __webpack_require__(/*! ./body.component.html */ "./src/app/body/body.component.html"),
-            styles: [__webpack_require__(/*! ./body.component.css */ "./src/app/body/body.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], BodyComponent);
-    return BodyComponent;
 }());
 
 
@@ -326,6 +260,69 @@ var ContactComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ContactComponent);
     return ContactComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/body/cover/cover.component.css":
+/*!************************************************!*\
+  !*** ./src/app/body/cover/cover.component.css ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "img {\r\n    width: 100%;\r\n    height: 88vh;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/body/cover/cover.component.html":
+/*!*************************************************!*\
+  !*** ./src/app/body/cover/cover.component.html ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <img src=\"http://via.placeholder.com/1000x2000\">\r\n\r\n    <!-- Scroll Arrow -->\r\n    <section id=\"section07\" class=\"demo\">\r\n        <a href=\"#about-text\">\r\n            <span></span>\r\n            <span></span>\r\n        </a>\r\n    </section>\r\n\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/body/cover/cover.component.ts":
+/*!***********************************************!*\
+  !*** ./src/app/body/cover/cover.component.ts ***!
+  \***********************************************/
+/*! exports provided: CoverComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoverComponent", function() { return CoverComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CoverComponent = /** @class */ (function () {
+    function CoverComponent() {
+    }
+    CoverComponent.prototype.ngOnInit = function () {
+    };
+    CoverComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-cover',
+            template: __webpack_require__(/*! ./cover.component.html */ "./src/app/body/cover/cover.component.html"),
+            styles: [__webpack_require__(/*! ./cover.component.css */ "./src/app/body/cover/cover.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CoverComponent);
+    return CoverComponent;
 }());
 
 

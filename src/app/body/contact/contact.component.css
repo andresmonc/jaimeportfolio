@@ -3,3 +3,6 @@
     height: 100vh;
 }
 
+#contact {
+    overflow: hidden;
+}

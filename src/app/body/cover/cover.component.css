@@ -1,5 +1,8 @@
-img { 
-    max-width: 100%;
-    display: block;
-    height: auto;
+img {
+    width: 100%;
+    height: 88vh;
+}
+
+#cover {
+    overflow: hidden;
 }
