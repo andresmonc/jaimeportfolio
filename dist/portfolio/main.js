@@ -210,7 +210,7 @@ var AboutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#photo {\r\n    width: 100%;\r\n    height: 100vh;\r\n}\r\n\r\n"
+module.exports = "#photo {\r\n    width: 100%;\r\n    height: 60vh;\r\n}\r\n\r\n#contact {\r\n    overflow: hidden;\r\n}"
 
 /***/ }),
 
@@ -221,7 +221,7 @@ module.exports = "#photo {\r\n    width: 100%;\r\n    height: 100vh;\r\n}\r\n\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"../../assets/IMG-0874.JPG\" id=\"photo\">"
+module.exports = "<div id=\"contact\">\r\n<img src=\"../../assets/IMG-0874.JPG\" id=\"photo\">\r\n</div>"
 
 /***/ }),
 
@@ -273,7 +273,7 @@ var ContactComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\r\n    width: 100%;\r\n    height: 88vh;\r\n}"
+module.exports = "img {\r\n    width: 100%;\r\n    height: 88vh;\r\n}\r\n\r\n#cover {\r\n    overflow: hidden;\r\n}"
 
 /***/ }),
 
@@ -284,7 +284,7 @@ module.exports = "img {\r\n    width: 100%;\r\n    height: 88vh;\r\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n    <img src=\"http://via.placeholder.com/1000x2000\">\r\n\r\n    <!-- Scroll Arrow -->\r\n    <section id=\"section07\" class=\"demo\">\r\n        <a href=\"#about-text\">\r\n            <span></span>\r\n            <span></span>\r\n        </a>\r\n    </section>\r\n\r\n</div>"
+module.exports = "<div id=\"cover\">\r\n    <img src=\"http://via.placeholder.com/1000x2000\">\r\n\r\n    <!-- Scroll Arrow -->\r\n    <section id=\"section07\" class=\"demo\">\r\n        <a href=\"#about-text\">\r\n            <span></span>\r\n            <span></span>\r\n        </a>\r\n    </section>\r\n\r\n</div>"
 
 /***/ }),
 
