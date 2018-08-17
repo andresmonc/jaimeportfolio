@@ -4,10 +4,17 @@
     margin: 3em;
 }
 
+#about-text {
+    padding-top: 2em;
+}
 
 
 #aboutphoto {
     float: none;
     border-radius: 50%;
-
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
