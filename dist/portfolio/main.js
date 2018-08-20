@@ -99,12 +99,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _body_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./body/contact/contact.component */ "./src/app/body/contact/contact.component.ts");
 /* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
 /* harmony import */ var _body_cover_cover_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./body/cover/cover.component */ "./src/app/body/cover/cover.component.ts");
+/* harmony import */ var _experience_experience_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./experience/experience.component */ "./src/app/experience/experience.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -124,7 +126,8 @@ var AppModule = /** @class */ (function () {
                 _body_about_about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"],
                 _body_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"],
                 _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"],
-                _body_cover_cover_component__WEBPACK_IMPORTED_MODULE_7__["CoverComponent"]
+                _body_cover_cover_component__WEBPACK_IMPORTED_MODULE_7__["CoverComponent"],
+                _experience_experience_component__WEBPACK_IMPORTED_MODULE_8__["ExperienceComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
@@ -210,7 +213,7 @@ var AboutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#photo {\r\n    width: 100%;\r\n    height: 50vh;\r\n    background-image: url('IMG-0874.JPG');\r\n    background-attachment: fixed;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n#contact {\r\n    overflow: hidden;\r\n}"
+module.exports = "#contact {\r\n    overflow: hidden;\r\n}\r\n#photo {\r\n    width: 100%;\r\n    height: 50vh;\r\n    background-image: url('IMG-0874.JPG');\r\n    background-attachment: fixed;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    text-align: center;\r\n    vertical-align: middle;\r\n    line-height: 50vh;\r\n}\r\n.fa {\r\n    color:white;\r\n    font-size: 3em;\r\n    opacity: .6;\r\n    margin-left: .5em;\r\n    margin-right: .5em;\r\n}\r\n"
 
 /***/ }),
 
@@ -221,7 +224,7 @@ module.exports = "#photo {\r\n    width: 100%;\r\n    height: 50vh;\r\n    backg
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<span id=\"test\"></span>\r\n<div id=\"contact\">\r\n<div id=\"photo\"></div>\r\n</div>"
+module.exports = "<div id=\"contact\">\r\n    <div id=\"photo\">\r\n        <span id=\"contact-icons\">\r\n            <a href=\"\" target=\"_blank\">\r\n                <i class=\"fa fa-github\"></i>\r\n            </a>\r\n            <a href=\"\" target=\"_blank\">\r\n                <i class=\"fa fa-linkedin-square fa-fw\"></i>\r\n            </a>\r\n            <a href=\"\" target=\"_blank\">\r\n                <i class=\"fa fa-free-code-camp fa-fw\"></i>\r\n            </a>\r\n        </span>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -323,6 +326,69 @@ var CoverComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], CoverComponent);
     return CoverComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/experience/experience.component.css":
+/*!*****************************************************!*\
+  !*** ./src/app/experience/experience.component.css ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/experience/experience.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/experience/experience.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  experience works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/experience/experience.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/experience/experience.component.ts ***!
+  \****************************************************/
+/*! exports provided: ExperienceComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExperienceComponent", function() { return ExperienceComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ExperienceComponent = /** @class */ (function () {
+    function ExperienceComponent() {
+    }
+    ExperienceComponent.prototype.ngOnInit = function () {
+    };
+    ExperienceComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-experience',
+            template: __webpack_require__(/*! ./experience.component.html */ "./src/app/experience/experience.component.html"),
+            styles: [__webpack_require__(/*! ./experience.component.css */ "./src/app/experience/experience.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ExperienceComponent);
+    return ExperienceComponent;
 }());
 
 
