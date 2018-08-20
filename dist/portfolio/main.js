@@ -147,7 +147,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#about {\r\n    max-width: 100% !important;\r\n    height: 1200px;\r\n    margin: 3em;\r\n}\r\n\r\n\r\n\r\n#aboutphoto {\r\n    float: none;\r\n    border-radius: 50%;\r\n\r\n}\r\n"
+module.exports = "#about {\r\n    max-width: 100% !important;\r\n    height: auto;\r\n    margin: 3em;\r\n    margin-bottom: 6vh;\r\n    padding-bottom: 0;\r\n}\r\n\r\n#about-text {\r\n    padding-top: 0;\r\n    margin-top: 0;\r\n    display: block;\r\n    margin: 10px 200px 15px;\r\n    margin-right: var(--margin-text);\r\n    margin-left: var(--margin-text);\r\n    text-align-last: left;\r\n    text-align: justify;\r\n    -moz-text-align-last: left;\r\n    font-family: 'Roboto Slab',serif;\r\n    font-weight: 400;\r\n    font-size: 1.1em;\r\n    color: #212529;\r\n    box-sizing: border-box;\r\n}\r\n\r\n#aboutphoto-container{\r\n    display: block;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n#aboutphoto {\r\n    float: none;\r\n    border-radius: 50%;\r\n    max-width: var(--about-photo);\r\n    height: auto;\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n/* ribbon */\r\n\r\n.ribbon {\r\n font-size: 1em !important;\r\n /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */\r\n width: var(--about-ribbon);\r\n bottom: 40px;\r\n box-shadow: 0 10px 15px #000a;\r\n position: relative;\r\n background: #4286f4;\r\n color: #fff;\r\n text-align: center;\r\n padding: .5em 1em; /* Adjust to suit */\r\n margin: 0em auto 0em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */\r\n}\r\n\r\n.ribbon:before, .ribbon:after {\r\n content: \"\";\r\n position: absolute;\r\n display: block;\r\n bottom: -1em;\r\n border: 1.5em solid #4286f4;\r\n z-index: -2;\r\n\r\n}\r\n\r\n.ribbon:before {\r\n left: -2em;\r\n border-right-width: 1.5em;\r\n border-left-color: transparent;\r\n  box-shadow: 10px 1px 10px #000a;\r\n}\r\n\r\n.ribbon:after {\r\n right: -2em;\r\n border-left-width: 1.5em;\r\n border-right-color: transparent;\r\nbox-shadow: -10px 1px 10px #000a;\r\n}\r\n\r\n.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {\r\n content: \"\";\r\n position: absolute;\r\n display: block;\r\n border-style: solid;\r\n border-color:#4286f4 transparent transparent transparent;\r\n bottom: -1em;\r\n}\r\n\r\n.ribbon .ribbon-content:before {\r\n left: 0;\r\n border-width: 1em 0 0 1em;\r\n}\r\n\r\n.ribbon .ribbon-content:after {\r\n right: 0;\r\n border-width: 1em 1em 0 0;\r\n}"
 
 /***/ }),
 
@@ -158,7 +158,7 @@ module.exports = "#about {\r\n    max-width: 100% !important;\r\n    height: 120
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"about\">\r\n    <div id=\"aboutphoto-container\">\r\n        <img id=\"aboutphoto\" src=\"http://via.placeholder.com/180x180\">\r\n    </div>  \r\n    <div id=\"about-text\">\r\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam non mollitia inventore velit blanditiis ex, temporibus modi\r\n        possimus labore, hic placeat iusto in eligendi culpa alias obcaecati deserunt itaque optio! Lorem ipsum dolor sit\r\n        amet consectetur adipisicing elit. Consectetur, voluptatibus necessitatibus vitae commodi ducimus accusantium provident\r\n        quisquam beatae id aspernatur dolores voluptatum labore facere distinctio fugit adipisci rerum. Laboriosam, nobis!\r\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus aperiam iste quaerat! Numquam,\r\n        inventore nobis rem nesciunt esse ratione, laboriosam dignissimos id, incidunt ad quo ducimus repellendus animi fugit.\r\n    </div>\r\n</div>"
+module.exports = "<div id=\"about\">\r\n    <div id=\"aboutphoto-container\">\r\n        <img id=\"aboutphoto\" src=\"https://avatars3.githubusercontent.com/u/41450290?s=400&u=e2d203f900cf7adc68cfdbdfff3f011f679226a9&v=4\">\r\n        <h1 class=\"ribbon\">\r\n            <strong class=\"ribbon-content\" style=\"font-family: 'Lobster', cursive;\">About Me</strong>\r\n         </h1>\r\n    </div>\r\n    <div id=\"about-text\">\r\n        I am currently a Software Engineer at Fidelity Investments and a proud graduate from the University of North Texas with a\r\n        Bachelor’s of Business Administration in Finance. My Finance degree and business knowledge has allowed me to better\r\n        bridge gaps between business and technology. This knowledge afforded me to have a perspective that allows me to communicate\r\n        ideas between different stakeholders of the software development life cycle. Since I began working at Fidelity Investments,\r\n        I have had the opportunity to work in different lines of business where I worked on applications that had different\r\n        technology stacks yet interfaced within the same development ecosystem. Each application brought its own set of experiences\r\n        that gave me new ways to approach a problem. I feel that over the course of my time in the industry, I have refined\r\n        my versatility and have become technology agnostic. I welcome the challenges my next endeavors will bring and hope\r\n        they are as enriching as my last.\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -210,7 +210,7 @@ var AboutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#photo {\r\n    width: 100%;\r\n    height: 60vh;\r\n}\r\n\r\n#contact {\r\n    overflow: hidden;\r\n}"
+module.exports = "#photo {\r\n    width: 100%;\r\n    height: 50vh;\r\n    background-image: url('IMG-0874.JPG');\r\n    background-attachment: fixed;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n#contact {\r\n    overflow: hidden;\r\n}"
 
 /***/ }),
 
@@ -221,7 +221,7 @@ module.exports = "#photo {\r\n    width: 100%;\r\n    height: 60vh;\r\n}\r\n\r\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"contact\">\r\n<img src=\"../../assets/IMG-0874.JPG\" id=\"photo\">\r\n</div>"
+module.exports = "<span id=\"test\"></span>\r\n<div id=\"contact\">\r\n<div id=\"photo\"></div>\r\n</div>"
 
 /***/ }),
 
@@ -284,7 +284,7 @@ module.exports = "img {\r\n    width: 100%;\r\n    height: 88vh;\r\n}\r\n\r\n#co
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"cover\">\r\n    <img src=\"http://via.placeholder.com/1000x2000\">\r\n\r\n    <!-- Scroll Arrow -->\r\n    <section id=\"section07\" class=\"demo\">\r\n        <a href=\"#about-text\">\r\n            <span></span>\r\n            <span></span>\r\n        </a>\r\n    </section>\r\n\r\n</div>"
+module.exports = "<div id=\"cover\">\r\n    <img src=\"https://drive.google.com/uc?export=view&id=16nMYeilISuXBmEHxPuLFPszZF86LXYio\">\r\n\r\n    <!-- Scroll Arrow -->\r\n    <section id=\"section07\" class=\"demo\">\r\n        <a href=\"#about-text\">\r\n            <span></span>\r\n            <span></span>\r\n        </a>\r\n    </section>\r\n\r\n</div>\r\n\r\n<!-- \r\nmobile version\r\nhttps://drive.google.com/uc?export=view&id=1-LlUrm-RWJaNm5zUhbKa6TnXSk46_QX5 -->"
 
 /***/ }),
 
@@ -399,7 +399,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".navbar {\n  letter-spacing: .025em;\n  background-color: var(--main-theme-bgcolor);\n  overflow: hidden;\n  height: 12vh;\n}\n\n.fixed-top {\n  position: fixed;\n  overflow: hidden;\n  width: 100%;\n  top: 0;\n}\n\n.nav-item {\n    font-family: Open Sans,sans-serif;\n    font-size: 2.5vh;\n    font-weight: 400;\n    display: var(--desktop-show);\n    text-align: right;\n    padding-right: 1em;\n    padding-top: 4.6vh;\n    text-decoration: none;\n    float: right;\n}\n\n#logo {\n  font-family: 'Lobster Two', cursive;\n  font-size: 5vh;\n  display: block;\n  text-align: left;\n  padding-top: 2.5vh;\n  padding-left: 1em;\n  text-decoration: none;\n\n}\n\n#menu {\n  color:white; \n  float: right; \n  font-size: 4.5vh;\n  padding-right: 2.3vh;\n  padding-top: 2vh;\n  display: var(--mobile-show);\n}\n\nul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n  \n}\n\nli {\n  float: left;\n}\n\na{\n  color: var(--main-theme-color);;\n}\n"
+module.exports = ".navbar {\n  letter-spacing: .025em;\n  background-color: var(--main-theme-bgcolor);\n  overflow: hidden;\n  height: 12vh;\n  z-index: 4;\n}\n\n.fixed-top {\n  position: fixed;\n  overflow: hidden;\n  width: 100%;\n  top: 0;\n}\n\n.nav-item {\n    font-family: Open Sans,sans-serif;\n    font-size: 2.5vh;\n    font-weight: 400;\n    display: var(--desktop-show);\n    text-align: right;\n    padding-right: 1em;\n    padding-top: 4.6vh;\n    text-decoration: none;\n    float: right;\n}\n\n#logo {\n  font-family: 'Lobster Two', cursive;\n  font-size: 5vh;\n  display: block;\n  text-align: left;\n  padding-top: 2.5vh;\n  padding-left: 1em;\n  text-decoration: none;\n\n}\n\n#menu {\n  color:white; \n  float: right; \n  font-size: 4.5vh;\n  padding-right: 2.3vh;\n  padding-top: 2vh;\n  display: var(--mobile-show);\n}\n\nul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n  \n}\n\nli {\n  float: left;\n}\n\na{\n  color: var(--main-theme-color);;\n}\n"
 
 /***/ }),
 
@@ -410,7 +410,7 @@ module.exports = ".navbar {\n  letter-spacing: .025em;\n  background-color: var(
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar fixed-top\">\n<!-- <span id=\"logo\">\n  Jaime Moncayo hi\n  <i class=\"fa fa-bars\" aria-hidden=\"true\" id=\"menu\"></i>\n</span> -->\n\n<ul>\n    <li id=\"logo\"><a href=\"#\">Jaime Moncayo</a></li>\n    <li class=\"nav-item\"><a href=\"#\">News</a></li>\n    <li class=\"nav-item\"><a href=\"#\">Contact</a></li>\n    <li class=\"nav-item\"><a href=\"#\">About</a></li>\n    <li class=\"nav-item\"><a href=\"#\">Contact</a></li>\n    <li class=\"nav-item\"><a href=\"#\">About</a></li>\n    <li id=\"menu\"><a href=\"#\"><i class=\"fa fa-bars\" aria-hidden=\"true\" id=\"menu\"></i></a></li>\n  </ul>\n\n</nav>"
+module.exports = "<nav class=\"navbar fixed-top\">\n<!-- <span id=\"logo\">\n  Jaime Moncayo hi\n  <i class=\"fa fa-bars\" aria-hidden=\"true\" id=\"menu\"></i>\n</span> -->\n\n<ul>\n    <li id=\"logo\"><a href=\"#\">Jaime Moncayo</a></li>\n    <li class=\"nav-item\"><a href=\"#contacct\">Contact</a></li>\n    <li class=\"nav-item\"><a href=\"#test\">About me</a></li>\n    <!-- <li class=\"nav-item\"><a href=\"#\">About</a></li>\n    <li class=\"nav-item\"><a href=\"#\">Contact</a></li>\n    <li class=\"nav-item\"><a href=\"#\">About</a></li> -->\n    <li id=\"menu\"><a href=\"#\"><i class=\"fa fa-bars\" aria-hidden=\"true\" id=\"menu\"></i></a></li>\n  </ul>\n\n</nav>"
 
 /***/ }),
 

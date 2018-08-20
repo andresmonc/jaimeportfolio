@@ -3,6 +3,7 @@
   background-color: var(--main-theme-bgcolor);
   overflow: hidden;
   height: 12vh;
+  z-index: 4;
 }
 
 .fixed-top {

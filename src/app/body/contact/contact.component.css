@@ -1,6 +1,11 @@
 #photo {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
+    background-image: url("../../../assets/IMG-0874.JPG");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #contact {

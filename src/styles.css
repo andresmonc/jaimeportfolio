@@ -5,6 +5,9 @@
     :root {
         --mobile-show: block;
         --desktop-show: none;
+        --about-photo: 40vw;
+        --about-ribbon: 30vw;
+        --margin-text: 4vw;
     }
 }
 
@@ -13,6 +16,9 @@
     :root {
         --mobile-show: none;
         --desktop-show: block;
+        --about-photo: 18vw;
+        --about-ribbon: 10vw;
+        --margin-text: 20vw;
         }
 }
 
@@ -25,7 +31,7 @@
 html,body { 
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    
+    line-height: 1.8;
      }
 img { 
     float: left;
