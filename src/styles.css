@@ -7,7 +7,7 @@
         --desktop-show: none;
         --about-photo: 40vw;
         --about-ribbon: 30vw;
-        --margin-text: 4vw;
+        --margin-text: 3vw;
     }
 }
 
@@ -18,7 +18,7 @@
         --desktop-show: block;
         --about-photo: 18vw;
         --about-ribbon: 10vw;
-        --margin-text: 20vw;
+        --margin-text: 10vw;
         }
 }
 
