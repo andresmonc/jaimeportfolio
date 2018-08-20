@@ -8,6 +8,7 @@
         --about-photo: 40vw;
         --about-ribbon: 30vw;
         --margin-text: 3vw;
+        --experience-text-size: 4vw;
     }
 }
 
@@ -19,6 +20,7 @@
         --about-photo: 18vw;
         --about-ribbon: 10vw;
         --margin-text: 10vw;
+        --experience-text-size: 5vw;
         }
 }
 
