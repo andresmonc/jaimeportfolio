@@ -68,7 +68,7 @@ a {
   width: 100vw;
   position: fixed;
   z-index: 4;
-  top: 12vh;
+  top: var(--nav-height);
   right: 0;
   background-color: black;
   overflow-x: hidden;
