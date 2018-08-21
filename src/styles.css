@@ -10,6 +10,10 @@
         --margin-text: 3vw;
         --experience-text-size: 4vw;
         --mobile-brands: 26vw;
+        --nav-height: 8vh;
+        --nav-logo-top: 0px;
+        --nav-logo-m-top: -6px;
+        --page-margin-top: 8vh;
     }
 }
 
@@ -22,7 +26,11 @@
         --about-ribbon: 10vw;
         --margin-text: 10vw;
         --experience-text-size: 5vw;
-        --mobile-brands: 15vw
+        --mobile-brands: 15vw;
+        --nav-height: 12vh;
+        --nav-logo-top: 1vh;
+        --page-margin-top: 12vh;
+        --nav-logo-m-top: 0px;
         }
 }
 
@@ -45,7 +53,7 @@ img {
 }
 
 main {
-    margin-top: 12vh;
+    margin-top: var(--page-margin-top);
 } 
 
 a:link {
