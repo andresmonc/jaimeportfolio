@@ -48,7 +48,7 @@ module.exports = ".mat-elevation-z0{box-shadow:0 0 0 0 rgba(0,0,0,.2),0 0 0 0 rg
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n\n/* Mobile Settings */\n\n@media only screen and (max-width: 735px) {\n    :root {\n        --mobile-show: block;\n        --desktop-show: none;\n        --about-photo: 40vw;\n        --about-ribbon: 30vw;\n        --margin-text: 3vw;\n        --experience-text-size: 4vw;\n    }\n}\n\n/* Desktop/Tablet Settings */\n\n@media only screen and (min-width: 735px) {\n    :root {\n        --mobile-show: none;\n        --desktop-show: block;\n        --about-photo: 18vw;\n        --about-ribbon: 10vw;\n        --margin-text: 10vw;\n        --experience-text-size: 5vw;\n        }\n}\n\n:root {\n    --main-theme-bgcolor: black;\n    --main-theme-color: white;\n}\n\nhtml,body { \n    margin: 0;\n    font-family: 'Roboto', sans-serif;\n    line-height: 1.8;\n     }\n\nimg { \n    float: left;\n    margin: 0;\n    border: 0;\n}\n\nmain {\n    margin-top: 12vh;\n}\n\na:link {\n    text-decoration: none;\n}\n\na:visited {\n    text-decoration: none;\n}\n\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\r\n\r\n/* Mobile Settings */\r\n\r\n@media only screen and (max-width: 735px) {\r\n    :root {\r\n        --mobile-show: block;\r\n        --desktop-show: none;\r\n        --about-photo: 40vw;\r\n        --about-ribbon: 30vw;\r\n        --margin-text: 3vw;\r\n        --experience-text-size: 4vw;\r\n    }\r\n}\r\n\r\n/* Desktop/Tablet Settings */\r\n\r\n@media only screen and (min-width: 735px) {\r\n    :root {\r\n        --mobile-show: none;\r\n        --desktop-show: block;\r\n        --about-photo: 18vw;\r\n        --about-ribbon: 10vw;\r\n        --margin-text: 10vw;\r\n        --experience-text-size: 5vw;\r\n        }\r\n}\r\n\r\n:root {\r\n    --main-theme-bgcolor: black;\r\n    --main-theme-color: white;\r\n}\r\n\r\nhtml,body { \r\n    margin: 0;\r\n    font-family: 'Roboto', sans-serif;\r\n    line-height: 1.8;\r\n     }\r\n\r\nimg { \r\n    float: left;\r\n    margin: 0;\r\n    border: 0;\r\n}\r\n\r\nmain {\r\n    margin-top: 12vh;\r\n}\r\n\r\na:link {\r\n    text-decoration: none;\r\n}\r\n\r\na:visited {\r\n    text-decoration: none;\r\n}\r\n\r\n"
 
 /***/ }),
 
@@ -580,8 +580,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\jaime\Desktop\Projects\jaimeportfolio\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
-module.exports = __webpack_require__(/*! C:\Users\jaime\Desktop\Projects\jaimeportfolio\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! C:\Users\jaime\Desktop\Projects\portfolio\jaimeportfolio\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+module.exports = __webpack_require__(/*! C:\Users\jaime\Desktop\Projects\portfolio\jaimeportfolio\src\styles.css */"./src/styles.css");
 
 
 /***/ })
