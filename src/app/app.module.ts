@@ -6,9 +6,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { AboutComponent } from './body/about/about.component';
 import { ContactComponent } from './body/contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
 import { CoverComponent } from './body/cover/cover.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { ExperienceComponent } from './body/experience/experience.component';
+import { TechnologiesComponent } from './body/technologies/technologies.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +16,9 @@ import { ExperienceComponent } from './experience/experience.component';
     NavbarComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent,
     CoverComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    TechnologiesComponent
   ],
   imports: [
     BrowserModule

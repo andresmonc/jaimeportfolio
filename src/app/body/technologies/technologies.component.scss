@@ -1,0 +1,691 @@
+.technology {
+    height: 80vh;
+}
+
+#fixed-width-tech {
+    display: block;   
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vw;
+    max-height: 25vh;
+    float: none;
+}
+
+@media screen and (max-width: 1800px) and (min-width:600px) {
+    #mobile {
+        display: none;
+    }
+    #logos {
+        display: none;
+    }
+    .bottomRow {
+        text-align: center;
+    }
+    .logos2 {
+        padding: 20px;
+        overflow: hidden;
+        position: absolute;
+        top: 20%
+    }
+    .show {
+        img {
+            animation-name: fadeIn;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .carousel-control-prev {
+        background-color: black;
+        display: none
+    }
+    .carousel-control-next {
+        background-color: black;
+        display: none
+    }
+    .html5logo {
+        width: 250px;
+        height: 250px;
+        animation-delay: 1s;
+    }
+    .css3logo {
+        width: 200px;
+        /* you can use % */
+        height: 250px;
+        animation-delay: 1s;
+    }
+    .bootstrapLogo {
+        width: 200px;
+        /* you can use % */
+        height: 200px;
+        animation-delay: 1.25s;
+    }
+    .tsLogo {
+        width: 200px;
+        /* you can use % */
+        height: 210px;
+        animation-delay: 1.25s;
+    }
+    #logos {
+        opacity: 0.7;
+    }
+    .parent {
+        position: relative;
+        min-height: 500px;
+    }
+    .topLogos {
+        position: absolute;
+        top: 3%;
+        right: 8%;
+    }
+    .bottomLogos {
+        position: absolute;
+        bottom: 2%;
+        right: 10%;
+    }
+    h1 {
+        padding: 20px;
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        padding: 1em 2em;
+        letter-spacing: 0.05rem;
+    }
+    @-webkit-keyframes floating-text {
+        0% {
+            -webkit-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @-moz-keyframes floating-text {
+        0% {
+            -moz-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @-ms-keyframes floating-text {
+        0% {
+            -ms-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @-o-keyframes floating-text {
+        0% {
+            -o-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @keyframes floating-text {
+        0% {
+            transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    .tech {
+        font-family: 'Bungee Shade', cursive;
+        color: hsl(200, 80%, 45%);
+        font-size: 8vw;
+        text-align: center;
+        -webkit-animation: floating-text 1.3s ease alternate infinite;
+        -moz-animation: floating-text 1.3s ease alternate infinite;
+        -ms-animation: floating-text 1.3s ease alternate infinite;
+        -o-animation: floating-text 1.3s ease alternate infinite;
+        animation: floating-text 1.3s ease alternate infinite;
+    }
+    hr.style2 {
+        border-top: 5px double hsl(202, 71%, 49%);
+        width: 340px;
+    }
+    .worked {
+        text-align: center;
+    }
+    .ngLogo2 {
+        height: 265px;
+        width: 265px;
+    }
+    .carousel.slide {
+        text-align: center;
+    }
+    .nodeLogo {
+        width: 360px;
+        height: 260px;
+        padding: 20px;
+        animation-delay: .5s;
+    }
+    .firebaseLogo {
+        width: 600px;
+        /* you can use % */
+        height: 200px;
+        animation-delay: .25s;
+    }
+    .awsLogo {
+        width: 430px;
+        /* you can use % */
+        height: 170px;
+        animation-delay: .5s;
+    }
+    .gitLogo {
+        width: 400px;
+        /* you can use % */
+        height: 170px;
+        padding: 20px;
+        animation-delay: .75s;
+    }
+    .springLogo {
+        /* you can use % */
+        width: 470px;
+        /* you can use % */
+        height: 170px;
+        animation-delay: 1.5s;
+    }
+    .hibernateLogo {
+        width: 550px;
+        /* you can use % */
+        height: 200px;
+        padding: 20px;
+        animation-delay: 1.75s;
+    }
+    .oracleLogo {
+        width: 470px;
+        /* you can use % */
+        height: 240px;
+        padding: 20px;
+        animation-delay: 1.8s;
+    }
+    .pentahoLogo {
+        width: 430px;
+        /* you can use % */
+        height: 150px;
+        padding: 20px;
+        animation-delay: 1.75s;
+    }
+    .jiraLogo {
+        width: 280px;
+        /* you can use % */
+        height: 250px;
+        padding-top: 30px;
+        padding-left: 15px;
+        animation-delay: 1.5s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #desktop {
+        display: none;
+    }
+    #logos {
+        display: none;
+    }
+    .bottomRow {
+        text-align: center;
+    }
+    .logos2 {
+        padding: 20px;
+        overflow: hidden;
+        position: absolute;
+        top: 20%
+    }
+    .show {
+        img {
+            animation-name: fadeIn;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    #logos {
+        opacity: 0.7;
+    }
+    .parent {
+        position: relative;
+        min-height: 400px;
+    }
+    .topLogos {
+        position: absolute;
+        top: 3%;
+        right: 8%;
+    }
+    .bottomLogos {
+        position: absolute;
+        bottom: 2%;
+        right: 10%;
+    }
+    h1 {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+    }
+    @-webkit-keyframes floating-text {
+        0% {
+            -webkit-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @-moz-keyframes floating-text {
+        0% {
+            -moz-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @-ms-keyframes floating-text {
+        0% {
+            -ms-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @-o-keyframes floating-text {
+        0% {
+            -o-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @keyframes floating-text {
+        0% {
+            transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    .tech {
+        font-family: 'Bungee Shade', cursive;
+        color: hsl(200, 80%, 45%);
+        font-size: 8vw;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding-top: 30px;
+        -webkit-animation: floating-text 1.3s ease alternate infinite;
+        -moz-animation: floating-text 1.3s ease alternate infinite;
+        -ms-animation: floating-text 1.3s ease alternate infinite;
+        -o-animation: floating-text 1.3s ease alternate infinite;
+        animation: floating-text 1.3s ease alternate infinite;
+    }
+    hr.style2 {
+        border-top: 4px double hsl(202, 71%, 49%);
+        position: absolute;
+        text-align: center;
+        width: 50%;
+        left: 25%;
+        top: 80px;
+        padding-top: 30px;
+        display: none;
+        ;
+    }
+    .worked {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 30vh;
+        font-size: 6vw;
+        width: 100%;
+        top: 50px;
+        padding-top: 30px;
+    }
+    .ngLogo2 {
+        height: 150px;
+        width: 150px;
+    }
+    .carousel.slide {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 20%;
+    }
+    .nodeLogo {
+        width: 260px;
+        height: 150px;
+        padding: 20px;
+        animation-delay: .5s;
+    }
+    .firebaseLogo {
+        width: 280px;
+        /* you can use % */
+        height: 120px;
+        animation-delay: .25s;
+    }
+    .awsLogo {
+        width: 210px;
+        /* you can use % */
+        height: 90px;
+        animation-delay: .5s;
+    }
+    .gitLogo {
+        width: 220px;
+        /* you can use % */
+        height: 100px;
+        animation-delay: .75s;
+    }
+    .springLogo {
+        /* you can use % */
+        width: 220px;
+        /* you can use % */
+        height: 90px;
+        animation-delay: 1.5s;
+    }
+    .hibernateLogo {
+        width: 300px;
+        /* you can use % */
+        height: 185px;
+        padding-bottom: 60px;
+        animation-delay: 1.75s;
+    }
+    .oracleLogo {
+        width: 220px;
+        /* you can use % */
+        height: 145px;
+        animation-delay: 1.8s;
+    }
+    .pentahoLogo {
+        width: 270px;
+        /* you can use % */
+        height: 120px;
+        padding: 20px;
+        animation-delay: 1.75s;
+    }
+    .jiraLogo {
+        width: 240px;
+        /* you can use % */
+        height: 210px;
+        padding-top: 30px;
+        padding-left: 15px;
+        animation-delay: 1.5s;
+    }
+    .html5logo {
+        width: 150px;
+        height: 150px;
+        animation-delay: 1s;
+    }
+    .css3logo {
+        width: 120px;
+        /* you can use % */
+        height: 140px;
+        animation-delay: 1s;
+    }
+    .bootstrapLogo {
+        width: 120px;
+        /* you can use % */
+        height: 120px;
+        animation-delay: 1.25s;
+    }
+    .tsLogo {
+        width: 120px;
+        /* you can use % */
+        height: 110px;
+        animation-delay: 1.25s;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .carousel.slide {
+        display: none;
+    }
+    .logos2 {
+        display: none;
+    }
+    img {
+        opacity: 0;
+    }
+    .show {
+        img {
+            animation-name: fadeIn;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            -webkit-animation-name: fadeIn;
+            -moz-animation-name: fadeIn;
+            -ms-animation-name: fadeIn;
+            -o-animation-name: fadeIn;
+            -webkit-animation-duration: 2s;
+            -moz-animation-duration: 2s;
+            -ms-animation-duration: 2s;
+            -o-animation-duration: 2s;
+            -webkit-animation-duration: 2s;
+            -moz-animation-duration: 2s;
+            -ms-animation-duration: 2s;
+            -o-animation-duration: 2s;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .html5logo {
+        width: 210px;
+        height: 170px;
+        top: 30%;
+        left: 5.6%;
+        position: absolute;
+        animation-delay: 1s;
+    }
+    .css3logo {
+        width: 210;
+        /* you can use % */
+        height: 170px;
+        position: absolute;
+        top: 27%;
+        right: 10.5%;
+        animation-delay: 1s;
+    }
+    .bootstrapLogo {
+        width: 140px;
+        /* you can use % */
+        height: 140px;
+        top: 54%;
+        right: 10%;
+        position: absolute;
+        animation-delay: 1.25s;
+    }
+    .tsLogo {
+        width: 140px;
+        /* you can use % */
+        height: 140px;
+        top: 55%;
+        left: 8%;
+        position: absolute;
+        animation-delay: 1.25s;
+    }
+    #logos {
+        opacity: 0.7;
+    }
+    .parent {
+        position: relative;
+        min-height: 850px;
+    }
+    .topLogos {
+        position: absolute;
+        top: 3%;
+        right: 8%;
+    }
+    .bottomLogos {
+        position: absolute;
+        bottom: 2%;
+        right: 10%;
+    }
+    h1 {
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 37%;
+        margin: -70px 0 0 -170px;
+        font-family: 'Rubik', sans-serif;
+        padding: 1em 2em;
+        letter-spacing: 0.05rem;
+    }
+    @-webkit-keyframes floating-text {
+        0% {
+            -webkit-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @-moz-keyframes floating-text {
+        0% {
+            -moz-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @-ms-keyframes floating-text {
+        0% {
+            -ms-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @-o-keyframes floating-text {
+        0% {
+            -o-transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    @keyframes floating-text {
+        0% {
+            transform: translateY(.1em);
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+        }
+        100% {
+            text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+        }
+    }
+    .tech {
+        font-family: 'Bungee Shade', cursive;
+        color: hsl(200, 80%, 45%);
+        font-size: 14vw;
+        text-align: center;
+        -webkit-animation: floating-text 1.3s ease alternate infinite;
+        -moz-animation: floating-text 1.3s ease alternate infinite;
+        -ms-animation: floating-text 1.3s ease alternate infinite;
+        -o-animation: floating-text 1.3s ease alternate infinite;
+        animation: floating-text 1.3s ease alternate infinite;
+    }
+    hr.style2 {
+        border-top: 3px double hsl(202, 71%, 49%);
+        width: 340px;
+    }
+    .worked {
+        text-align: center;
+    }
+    .ngLogo2 {
+        height: 230px;
+        width: 230px;
+        padding: 20px;
+        animation-delay: .75s;
+    }
+    .nodeLogo {
+        width: 250px;
+        height: 170px;
+        padding: 20px;
+        animation-delay: .5s;
+    }
+    .firebaseLogo {
+        width: 460px;
+        /* you can use % */
+        height: 170px;
+        animation-delay: .25s;
+    }
+    .awsLogo {
+        width: 320px;
+        /* you can use % */
+        height: 150px;
+        padding: 20px;
+        animation-delay: .5s;
+    }
+    .gitLogo {
+        width: 320px;
+        /* you can use % */
+        height: 150px;
+        padding: 20px;
+        animation-delay: .75s;
+    }
+    .springLogo {
+        width: 330px;
+        /* you can use % */
+        height: 150px;
+        padding: 20px;
+        animation-delay: 1.5s;
+    }
+    .hibernateLogo {
+        width: 380px;
+        /* you can use % */
+        height: 180px;
+        padding: 20px;
+        animation-delay: 1.75s;
+    }
+    .oracleLogo {
+        width: 280px;
+        /* you can use % */
+        height: 180px;
+        padding: 20px;
+        animation-delay: 1.8s;
+    }
+    .pentahoLogo {
+        width: 330px;
+        /* you can use % */
+        height: 125px;
+        padding: 20px;
+        animation-delay: 1.75s;
+    }
+    .jiraLogo {
+        width: 210px;
+        /* you can use % */
+        height: 180px;
+        padding-top: 30px;
+        padding-left: 15px;
+        animation-delay: 1.5s;
+    }
+}
