@@ -5,14 +5,7 @@
   height: 12vh;
   z-index: 4;
 }
-.navbar-transp {
-  letter-spacing: .025em;
-  text-decoration: none;
-  background-color: none;
-  overflow: hidden;
-  height: 12vh;
-  z-index: 4;
-}
+
 
 .fixed-top {
   position: fixed;
@@ -73,12 +66,12 @@ a{
   width: 100vw;
   position: fixed;
   z-index: 4;
-  top: 0;
+  top: 12vh;
   right: 0;
   background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+
 }
 
 .sidenav a {

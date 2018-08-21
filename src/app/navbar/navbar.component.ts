@@ -1,5 +1,7 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/platform-browser';
+
+declare var jquery: any;
+declare var $: any;
 
 @Component({
   selector: 'app-navbar',
@@ -8,30 +10,21 @@ import { DOCUMENT } from '@angular/platform-browser';
 })
 export class NavbarComponent {
 
-  public fadeWidget: boolean = false;
-
+ 
   constructor() { }
 
   ngOnInit() {
-    let SidebarVar = 1;
+    this.toggle()
   }
 
-
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-
-
-
-    let number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number > 950) {
-      this.fadeWidget = true;
-
-    }
-    else if (this.fadeWidget && number < 950) {
-      this.fadeWidget = false;
-    }
-
-
+  toggleTitle() {
+    $('.title').fadeOut("slow");
   }
+
+    toggle(){
+      $('#menu').click(function () {
+        $('.title').fadeToggle();
+      });
+    }
 
 }
