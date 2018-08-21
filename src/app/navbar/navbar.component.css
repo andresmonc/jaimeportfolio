@@ -5,6 +5,14 @@
   height: 12vh;
   z-index: 4;
 }
+.navbar-transp {
+  letter-spacing: .025em;
+  text-decoration: none;
+  background-color: none;
+  overflow: hidden;
+  height: 12vh;
+  z-index: 4;
+}
 
 .fixed-top {
   position: fixed;
@@ -28,7 +36,7 @@
   font-size: 5vh;
   display: block;
   text-align: left;
-  padding-top: 2.5vh;
+  padding-top: 1vh;
   padding-left: 1em;
   text-decoration: none;
 
@@ -37,7 +45,7 @@
 #menu {
   color:white; 
   float: right; 
-  font-size: 4.5vh;
+  font-size: 4vh;
   padding-right: 2.3vh;
   padding-top: 2vh;
   display: var(--mobile-show);

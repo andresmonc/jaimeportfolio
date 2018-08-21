@@ -1,7 +1,5 @@
-import { Component } from '@angular/core';
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-navbar',
@@ -10,11 +8,30 @@ import { map } from 'rxjs/operators';
 })
 export class NavbarComponent {
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches)
-    );
+  public fadeWidget: boolean = false;
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor() { }
+
+  ngOnInit() {
 
   }
+
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+
+
+
+    let number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    if (number > 950) {
+      this.fadeWidget = true;
+
+    }
+    else if (this.fadeWidget && number < 950) {
+      this.fadeWidget = false;
+    }
+
+
+  }
+
+}
