@@ -38,6 +38,8 @@ node_modules/
 jspm_packages/
 dist/
 /dist
+/.firebase
+.firebase/
 
 # TypeScript v1 declaration files
 typings/
