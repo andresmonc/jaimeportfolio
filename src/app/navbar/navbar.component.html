@@ -6,12 +6,23 @@
 
   <ul>
     <li id="logo"><a href="#">Jaime Moncayo</a></li>
+    <li class="nav-item"><a href="#contact">Contact</a></li>
     <li class="nav-item"><a href="#technology">Technology</a></li>
     <li class="nav-item"><a href="#experience">Experience</a></li>
-    <li class="nav-item"><a href="#contact">Contact</a></li>
     <li class="nav-item"><a href="#about">About</a></li>
     <!-- <li class="nav-item"><a href="#">About</a></li> -->
-    <li id="menu"><a href="#"><i class="fa fa-bars" aria-hidden="true" id="menu"></i></a></li>
+    <div id="open">
+      <li id="menu"><a href="#" (click)="SidebarVar=2"><i class="fa fa-bars" aria-hidden="true" id="menu"></i></a></li>
+    </div>
+
   </ul>
 
 </nav>
+
+<div id="mySidenav" class="sidenav" *ngIf="SidebarVar === 2">
+  <a class="closebtn" (click)="SidebarVar=1">&times;</a>
+  <a href="#about" (click)="SidebarVar=1">About</a>
+  <a href="#experience" (click)="SidebarVar=1">Experience</a>
+  <a href="#technology" (click)="SidebarVar=1">Technology</a>
+  <a href="#contact" (click)="SidebarVar=1">Contact</a>
+</div>

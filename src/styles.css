@@ -9,6 +9,7 @@
         --about-ribbon: 30vw;
         --margin-text: 3vw;
         --experience-text-size: 4vw;
+        --mobile-brands: 26vw;
     }
 }
 
@@ -21,6 +22,7 @@
         --about-ribbon: 10vw;
         --margin-text: 10vw;
         --experience-text-size: 5vw;
+        --mobile-brands: 15vw
         }
 }
 
@@ -34,6 +36,7 @@ html,body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     line-height: 1.8;
+    scroll-behavior: smooth;
      }
 img { 
     float: left;

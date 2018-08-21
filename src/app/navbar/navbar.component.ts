@@ -13,7 +13,7 @@ export class NavbarComponent {
   constructor() { }
 
   ngOnInit() {
-
+    let SidebarVar = 1;
   }
 
 
