@@ -3,7 +3,7 @@
 }
 
 #fixed-width-tech {
-    display: block;   
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: var(--mobile-brands);
@@ -42,37 +42,6 @@
         to {
             opacity: 1;
         }
-    }
-    .carousel-control-prev {
-        background-color: black;
-        display: none
-    }
-    .carousel-control-next {
-        background-color: black;
-        display: none
-    }
-    .html5logo {
-        width: 250px;
-        height: 250px;
-        animation-delay: 1s;
-    }
-    .css3logo {
-        width: 200px;
-        /* you can use % */
-        height: 250px;
-        animation-delay: 1s;
-    }
-    .bootstrapLogo {
-        width: 200px;
-        /* you can use % */
-        height: 200px;
-        animation-delay: 1.25s;
-    }
-    .tsLogo {
-        width: 200px;
-        /* you can use % */
-        height: 210px;
-        animation-delay: 1.25s;
     }
     #logos {
         opacity: 0.7;
@@ -164,70 +133,6 @@
     .ngLogo2 {
         height: 265px;
         width: 265px;
-    }
-    .carousel.slide {
-        text-align: center;
-    }
-    .nodeLogo {
-        width: 360px;
-        height: 260px;
-        padding: 20px;
-        animation-delay: .5s;
-    }
-    .firebaseLogo {
-        width: 600px;
-        /* you can use % */
-        height: 200px;
-        animation-delay: .25s;
-    }
-    .awsLogo {
-        width: 430px;
-        /* you can use % */
-        height: 170px;
-        animation-delay: .5s;
-    }
-    .gitLogo {
-        width: 400px;
-        /* you can use % */
-        height: 170px;
-        padding: 20px;
-        animation-delay: .75s;
-    }
-    .springLogo {
-        /* you can use % */
-        width: 470px;
-        /* you can use % */
-        height: 170px;
-        animation-delay: 1.5s;
-    }
-    .hibernateLogo {
-        width: 550px;
-        /* you can use % */
-        height: 200px;
-        padding: 20px;
-        animation-delay: 1.75s;
-    }
-    .oracleLogo {
-        width: 470px;
-        /* you can use % */
-        height: 240px;
-        padding: 20px;
-        animation-delay: 1.8s;
-    }
-    .pentahoLogo {
-        width: 430px;
-        /* you can use % */
-        height: 150px;
-        padding: 20px;
-        animation-delay: 1.75s;
-    }
-    .jiraLogo {
-        width: 280px;
-        /* you can use % */
-        height: 250px;
-        padding-top: 30px;
-        padding-left: 15px;
-        animation-delay: 1.5s;
     }
 }
 
@@ -363,98 +268,6 @@
         top: 50px;
         padding-top: 30px;
     }
-    .ngLogo2 {
-        height: 150px;
-        width: 150px;
-    }
-    .carousel.slide {
-        width: 100%;
-        position: absolute;
-        text-align: center;
-        bottom: 20%;
-    }
-    .nodeLogo {
-        width: 260px;
-        height: 150px;
-        padding: 20px;
-        animation-delay: .5s;
-    }
-    .firebaseLogo {
-        width: 280px;
-        /* you can use % */
-        height: 120px;
-        animation-delay: .25s;
-    }
-    .awsLogo {
-        width: 210px;
-        /* you can use % */
-        height: 90px;
-        animation-delay: .5s;
-    }
-    .gitLogo {
-        width: 220px;
-        /* you can use % */
-        height: 100px;
-        animation-delay: .75s;
-    }
-    .springLogo {
-        /* you can use % */
-        width: 220px;
-        /* you can use % */
-        height: 90px;
-        animation-delay: 1.5s;
-    }
-    .hibernateLogo {
-        width: 300px;
-        /* you can use % */
-        height: 185px;
-        padding-bottom: 60px;
-        animation-delay: 1.75s;
-    }
-    .oracleLogo {
-        width: 220px;
-        /* you can use % */
-        height: 145px;
-        animation-delay: 1.8s;
-    }
-    .pentahoLogo {
-        width: 270px;
-        /* you can use % */
-        height: 120px;
-        padding: 20px;
-        animation-delay: 1.75s;
-    }
-    .jiraLogo {
-        width: 240px;
-        /* you can use % */
-        height: 210px;
-        padding-top: 30px;
-        padding-left: 15px;
-        animation-delay: 1.5s;
-    }
-    .html5logo {
-        width: 150px;
-        height: 150px;
-        animation-delay: 1s;
-    }
-    .css3logo {
-        width: 120px;
-        /* you can use % */
-        height: 140px;
-        animation-delay: 1s;
-    }
-    .bootstrapLogo {
-        width: 120px;
-        /* you can use % */
-        height: 120px;
-        animation-delay: 1.25s;
-    }
-    .tsLogo {
-        width: 120px;
-        /* you can use % */
-        height: 110px;
-        animation-delay: 1.25s;
-    }
 }
 
 @media screen and (min-width: 1800px) {
@@ -494,41 +307,6 @@
         to {
             opacity: 1;
         }
-    }
-    .html5logo {
-        width: 210px;
-        height: 170px;
-        top: 30%;
-        left: 5.6%;
-        position: absolute;
-        animation-delay: 1s;
-    }
-    .css3logo {
-        width: 210;
-        /* you can use % */
-        height: 170px;
-        position: absolute;
-        top: 27%;
-        right: 10.5%;
-        animation-delay: 1s;
-    }
-    .bootstrapLogo {
-        width: 140px;
-        /* you can use % */
-        height: 140px;
-        top: 54%;
-        right: 10%;
-        position: absolute;
-        animation-delay: 1.25s;
-    }
-    .tsLogo {
-        width: 140px;
-        /* you can use % */
-        height: 140px;
-        top: 55%;
-        left: 8%;
-        position: absolute;
-        animation-delay: 1.25s;
     }
     #logos {
         opacity: 0.7;
@@ -619,73 +397,5 @@
     }
     .worked {
         text-align: center;
-    }
-    .ngLogo2 {
-        height: 230px;
-        width: 230px;
-        padding: 20px;
-        animation-delay: .75s;
-    }
-    .nodeLogo {
-        width: 250px;
-        height: 170px;
-        padding: 20px;
-        animation-delay: .5s;
-    }
-    .firebaseLogo {
-        width: 460px;
-        /* you can use % */
-        height: 170px;
-        animation-delay: .25s;
-    }
-    .awsLogo {
-        width: 320px;
-        /* you can use % */
-        height: 150px;
-        padding: 20px;
-        animation-delay: .5s;
-    }
-    .gitLogo {
-        width: 320px;
-        /* you can use % */
-        height: 150px;
-        padding: 20px;
-        animation-delay: .75s;
-    }
-    .springLogo {
-        width: 330px;
-        /* you can use % */
-        height: 150px;
-        padding: 20px;
-        animation-delay: 1.5s;
-    }
-    .hibernateLogo {
-        width: 380px;
-        /* you can use % */
-        height: 180px;
-        padding: 20px;
-        animation-delay: 1.75s;
-    }
-    .oracleLogo {
-        width: 280px;
-        /* you can use % */
-        height: 180px;
-        padding: 20px;
-        animation-delay: 1.8s;
-    }
-    .pentahoLogo {
-        width: 330px;
-        /* you can use % */
-        height: 125px;
-        padding: 20px;
-        animation-delay: 1.75s;
-    }
-    .jiraLogo {
-        width: 210px;
-        /* you can use % */
-        height: 180px;
-        padding-top: 30px;
-        padding-left: 15px;
-        animation-delay: 1.5s;
     }
 }

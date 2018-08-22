@@ -24,6 +24,15 @@
 
 #expitem{
     font-style: normal;
-    color: #d81748;
+    color: black;
+    position: absolute;
+}
+
+#bracket-right {
+    color:red;
+    font-style: normal;
+    margin-left: 1.5em;
+    padding-left: 2.8em;
+    margin-right: .5em;
 }
 
