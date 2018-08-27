@@ -13,7 +13,7 @@
         --nav-height: 8vh;
         --nav-logo-top: 0px;
         --nav-logo-m-top: -6px;
-        --page-margin-top: 8vh;
+        --page-margin-top: 0vh;
     }
 }
 
@@ -29,7 +29,7 @@
         --mobile-brands: 15vw;
         --nav-height: 12vh;
         --nav-logo-top: 1vh;
-        --page-margin-top: 12vh;
+        --page-margin-top: 0vh;
         --nav-logo-m-top: 0px;
         }
 }

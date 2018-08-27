@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechnologiesComponent implements OnInit {
   pictures = ['../../../assets/HTML5_Logo.svg', '../../../assets/nodeJS.png', '../../../assets/angular.svg',
-    '../../../assets/bootstrap.png', '../../../assets/css3.png', '../../../assets/firebase.png',
+    '../../../assets/bootstrap.png', '../../../assets/css3.svg', '../../../assets/firebase.png',
     '../../../assets/gitlogo.png', '../../../assets/jiralogo.svg', '../../../assets/oracle.png',
     '../../../assets/mongo.svg', '../../../assets/jquery.png'];
   img: string;

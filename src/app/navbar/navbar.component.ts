@@ -10,21 +10,37 @@ declare var $: any;
 })
 export class NavbarComponent {
 
- 
+
   constructor() { }
 
   ngOnInit() {
-    this.toggle()
+    this.toggle();
+    this.navBar();
   }
 
   toggleTitle() {
     $('.title').fadeOut("slow");
   }
 
-    toggle(){
-      $('#menu').click(function () {
-        $('.title').fadeToggle();
-      });
-    }
+  toggle() {
+    $('#menu').click(function () {
+      $('.title').fadeToggle();
+      $('.navbar').css('background-color', 'black');
+    });
+  }
+
+
+  navBar() {
+    var scroll_pos = 0;
+    $(document).scroll(function () {
+      scroll_pos = $(this).scrollTop();
+      if (scroll_pos > 600) {
+        $(".navbar").css('background-color', 'black');
+      } else {
+        $(".navbar").css('background-color', 'transparent');
+      }
+    });
+
+  }
 
 }

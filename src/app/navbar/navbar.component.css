@@ -1,9 +1,10 @@
 .navbar {
   letter-spacing: .025em;
-  background-color: var(--main-theme-bgcolor);
+  background-color: transparent;
   overflow: hidden;
   height: var(--nav-height);
   z-index: 4;
+
 }
 
 #logo {
