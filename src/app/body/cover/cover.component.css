@@ -6,7 +6,7 @@ img {
 .coverimg {
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("../../../assets/c1.jpg");
+  background-image: var(--cover-mobile);
   z-index: -10;
   background-attachment: 100vh;
 }

@@ -39,10 +39,12 @@ export class NavbarComponent {
       if (scroll_pos > 600) {
         $(".navbar").css('background-color', 'black');
         $(".sidebar").css('background-color', 'black');
+        
 
       } else {
         $(".navbar").css('background-color', 'transparent');
         $(".sidebar").css('background-color', 'transparent');
+
 
       }
     });

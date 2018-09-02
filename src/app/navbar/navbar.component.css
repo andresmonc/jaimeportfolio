@@ -16,6 +16,10 @@
   margin-top: var(--nav-logo-m-top);
   padding-left: 1em;
   text-decoration: none;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: var(--nav-text-stroke);
+  -webkit-text-stroke-color: black;
+
 }
 
 #menu {
@@ -25,6 +29,9 @@
   padding-right: 2.3vh;
   padding-top: 1vh;
   display: var(--mobile-show);
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .nav-item {
@@ -58,8 +65,10 @@ li {
 }
 
 a {
-  color: var(--main-theme-color);
-  ;
+  /* color: var(--main-theme-color); */
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: var(--nav-text-stroke);
+  -webkit-text-stroke-color: black;
 }
 
 /* side nav */
