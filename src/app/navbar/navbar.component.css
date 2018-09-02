@@ -4,7 +4,7 @@
   overflow: hidden;
   height: var(--nav-height);
   z-index: 4;
-
+  transition: 1.5s;
 }
 
 #logo {
@@ -64,32 +64,36 @@ a {
 
 /* side nav */
 
-.sidenav {
+.sidebar {
   height: 100%;
   width: 100vw;
   position: fixed;
   z-index: 4;
   top: var(--nav-height);
   right: 0;
-  background-color: black;
+  background-color: transparent;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
-.sidenav a {
+.sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: white;
   display: block;
   transition: 0.3s;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
 }
 
-.sidenav a:hover {
+.sidebar a:hover {
   color: grey;
 }
 
-.sidenav .closebtn {
+.sidebar .closebtn {
   position: absolute;
   top: 0;
   right: 25px;

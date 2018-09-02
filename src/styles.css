@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
+section:before {
+    height: var(--offset-height);
+    content: "";
+    display:block;
+}
+
 /* Mobile Settings */
 @media only screen and (max-width: 735px) {
     :root {
@@ -14,6 +20,7 @@
         --nav-logo-top: 0px;
         --nav-logo-m-top: -6px;
         --page-margin-top: 0vh;
+        --offset-height: 7vh;
     }
 }
 
@@ -31,6 +38,7 @@
         --nav-logo-top: 1vh;
         --page-margin-top: 0vh;
         --nav-logo-m-top: 0px;
+        --offset-height: 10vh;
         }
 }
 
