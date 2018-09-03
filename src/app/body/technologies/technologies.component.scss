@@ -1,65 +1,17 @@
-.technology {
-    height: 85vh;
+#technology {
+    height: var(--tech-height)
 }
 
-#fixed-width-tech {
-    display: block;
+.fixed-width-tech {
     margin-left: auto;
     margin-right: auto;
     width: var(--mobile-brands);
-    max-height: 25vh;
-    float: none;
+    height: 15%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media screen and (max-width: 1800px) and (min-width:600px) {
-    #mobile {
-        display: none;
-    }
-    #logos {
-        display: none;
-    }
-    .bottomRow {
-        text-align: center;
-    }
-    .logos2 {
-        padding: 20px;
-        overflow: hidden;
-        position: absolute;
-        top: 20%
-    }
-    .show {
-        img {
-            animation-name: fadeIn;
-            animation-duration: 2s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-    }
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    #logos {
-        opacity: 0.7;
-    }
-    .parent {
-        position: relative;
-        min-height: 500px;
-    }
-    .topLogos {
-        position: absolute;
-        top: 3%;
-        right: 8%;
-    }
-    .bottomLogos {
-        position: absolute;
-        bottom: 2%;
-        right: 10%;
-    }
     h1 {
         padding: 20px;
         text-align: center;
@@ -123,43 +75,9 @@
         -o-animation: floating-text 1.3s ease alternate infinite;
         animation: floating-text 1.3s ease alternate infinite;
     }
-    hr.style2 {
-        border-top: 5px double hsl(202, 71%, 49%);
-        width: 340px;
-    }
-    .worked {
-        text-align: center;
-    }
-    .ngLogo2 {
-        height: 265px;
-        width: 265px;
-    }
 }
 
 @media screen and (max-width: 600px) {
-    #desktop {
-        display: none;
-    }
-    #logos {
-        display: none;
-    }
-    .bottomRow {
-        text-align: center;
-    }
-    .logos2 {
-        padding: 20px;
-        overflow: hidden;
-        position: absolute;
-        top: 20%
-    }
-    .show {
-        img {
-            animation-name: fadeIn;
-            animation-duration: 2s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-    }
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -167,23 +85,6 @@
         to {
             opacity: 1;
         }
-    }
-    #logos {
-        opacity: 0.7;
-    }
-    .parent {
-        position: relative;
-        min-height: 400px;
-    }
-    .topLogos {
-        position: absolute;
-        top: 3%;
-        right: 8%;
-    }
-    .bottomLogos {
-        position: absolute;
-        bottom: 2%;
-        right: 10%;
     }
     h1 {
         text-align: center;
@@ -248,17 +149,6 @@
         -o-animation: floating-text 1.3s ease alternate infinite;
         animation: floating-text 1.3s ease alternate infinite;
     }
-    hr.style2 {
-        border-top: 4px double hsl(202, 71%, 49%);
-        position: absolute;
-        text-align: center;
-        width: 50%;
-        left: 25%;
-        top: 80px;
-        padding-top: 30px;
-        display: none;
-        ;
-    }
     .worked {
         text-align: center;
         vertical-align: middle;
@@ -271,35 +161,6 @@
 }
 
 @media screen and (min-width: 1800px) {
-    .carousel.slide {
-        display: none;
-    }
-    .logos2 {
-        display: none;
-    }
-    img {
-        opacity: 0;
-    }
-    .show {
-        img {
-            animation-name: fadeIn;
-            animation-duration: 2s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            -webkit-animation-name: fadeIn;
-            -moz-animation-name: fadeIn;
-            -ms-animation-name: fadeIn;
-            -o-animation-name: fadeIn;
-            -webkit-animation-duration: 2s;
-            -moz-animation-duration: 2s;
-            -ms-animation-duration: 2s;
-            -o-animation-duration: 2s;
-            -webkit-animation-duration: 2s;
-            -moz-animation-duration: 2s;
-            -ms-animation-duration: 2s;
-            -o-animation-duration: 2s;
-        }
-    }
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -307,23 +168,6 @@
         to {
             opacity: 1;
         }
-    }
-    #logos {
-        opacity: 0.7;
-    }
-    .parent {
-        position: relative;
-        min-height: 850px;
-    }
-    .topLogos {
-        position: absolute;
-        top: 3%;
-        right: 8%;
-    }
-    .bottomLogos {
-        position: absolute;
-        bottom: 2%;
-        right: 10%;
     }
     h1 {
         padding: 20px;
@@ -391,11 +235,11 @@
         -o-animation: floating-text 1.3s ease alternate infinite;
         animation: floating-text 1.3s ease alternate infinite;
     }
-    hr.style2 {
-        border-top: 3px double hsl(202, 71%, 49%);
-        width: 340px;
-    }
     .worked {
         text-align: center;
     }
+}
+
+.worked {
+    margin-bottom: 2%;
 }

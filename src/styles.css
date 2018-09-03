@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 section:before {
-    height: var(--offset-height);
+    height: var(--offset-anchors);
     content: "";
     display: block;
 }
@@ -24,6 +24,9 @@ section:before {
         --offset-height: 7vh;
         --cover-mobile: url("assets/cm.jpg");
         --nav-text-stroke: 1px;
+        --offset-anchors: 5vh;
+        --banner-mobile: url('/assets/bm.jpg');
+        --tech-height: 60vh;
     }
 }
 
@@ -45,6 +48,9 @@ section:before {
         --offset-height: 10vh;
         --cover-mobile: url("assets/c1.jpg");
         --nav-text-stroke: 0px;
+        --offset-anchors: 6.5vh;
+        --banner-mobile: url('/assets/banner1.jpg');
+        --tech-height: 80vh;
 
     }
 }

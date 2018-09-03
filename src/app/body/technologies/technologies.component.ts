@@ -1,31 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var jquery: any;
+declare var $: any;
+var images = ['#imgone', '#imgtwo', '#imgthree', '#imgfour', '#imgfive', '#imgsix', '#imgseven', '#imgeight'],
+  imgIx = 0;
 @Component({
   selector: 'app-technologies',
   templateUrl: './technologies.component.html',
   styleUrls: ['./technologies.component.scss']
 })
 export class TechnologiesComponent implements OnInit {
-  pictures = ['../../../assets/HTML5_Logo.svg', '../../../assets/nodeJS.png', '../../../assets/angular.svg',
-    '../../../assets/bootstrap.png', '../../../assets/css3.svg', '../../../assets/firebase.png',
-    '../../../assets/gitlogo.png', '../../../assets/jiralogo.svg', '../../../assets/oracle.png',
-    '../../../assets/mongo.svg', '../../../assets/jquery.png'];
-  img: string;
   constructor() { }
 
   ngOnInit() {
-    this.timeOut();
+    this.imageCycle();
   }
-
-  timeOut() {
-    let count = 0;
-    setInterval(() => {
-      if (count === this.pictures.length) {
-        count = 0;
-      }
-      this.img = this.pictures[count];
-      count++;
-    }, 1500);
-
+  imageCycle() {
+    (function nextImage() {
+      $(images[imgIx++] || images[imgIx = 0, imgIx++]).hide().delay(500).show(1000).delay(1000).fadeOut(500, nextImage);
+    })();
   }
 }

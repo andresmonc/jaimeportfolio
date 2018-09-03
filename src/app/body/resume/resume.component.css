@@ -1,0 +1,50 @@
+#resume {
+    height: 80vh;
+    width: 100%;
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 50px;
+    font-family: 'Rubik','Roboto Slab', serif;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+#res-photo {
+    background-image: var(--banner-mobile);
+    background-size: 100% 100%;
+    width: 100%;
+    height: auto;
+    height: 100%;
+}
+
+hr {
+    color: black;
+    background-color: black;
+    border: none;
+    width: 20%;
+    height: 3px;
+}
+
+#topline {
+    padding-top: 3vh;
+}
+
+#botline {
+    padding-top: 22vh;
+}
+
+#res-content {
+    padding-top: 17vh;
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    border-style: solid;
+    color: black;
+    border-color: black;
+    border-width: .1em;
+    font-size: 1em;
+    font-weight: 700;
+}
