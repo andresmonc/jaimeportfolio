@@ -41,7 +41,8 @@ dist/
 /.firebase
 .firebase/
 firbase/
-
+/public
+public/
 # TypeScript v1 declaration files
 typings/
 
