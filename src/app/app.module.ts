@@ -10,7 +10,6 @@ import { CoverComponent } from './body/cover/cover.component';
 import { ExperienceComponent } from './body/experience/experience.component';
 import { TechnologiesComponent } from './body/technologies/technologies.component';
 import { ResumeComponent } from './body/resume/resume.component';
-import { FormComponent } from './body/form/form.component';
 
 import { WINDOW_PROVIDERS } from "../services/window.service";
 
@@ -23,8 +22,7 @@ import { WINDOW_PROVIDERS } from "../services/window.service";
     CoverComponent,
     ExperienceComponent,
     TechnologiesComponent,
-    ResumeComponent,
-    FormComponent
+    ResumeComponent
   ],
   imports: [
     BrowserModule
