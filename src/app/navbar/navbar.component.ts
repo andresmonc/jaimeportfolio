@@ -1,4 +1,5 @@
-import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { Inject } from "@angular/core";
 import { DOCUMENT } from "@angular/platform-browser";
 import { WINDOW } from "../../services/window.service";
 
@@ -13,8 +14,12 @@ declare var $: any;
 export class NavbarComponent {
 
 
+  private aboutOffset: Number;
 
-  constructor() { }
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    @Inject(WINDOW) private window: Window
+  ) { }
 
   ngOnInit() {
     this.toggle();
@@ -25,7 +30,6 @@ export class NavbarComponent {
     $('.sidebar').fadeOut("slow");
 
   }
-
   toggle() {
     $('#menu').click(function () {
       $('.sidebar').fadeToggle();
@@ -34,23 +38,22 @@ export class NavbarComponent {
 
 
   navBar() {
-
-    var scroll_pos = 0;
-    $(document).scroll(function () {
-      scroll_pos = $(this).scrollTop();
-      if (scroll_pos > 600) {
-        $(".navbar").css('background-color', 'black');
-        $(".sidebar").css('background-color', 'black');
-        
-
-      } else {
-        $(".navbar").css('background-color', 'transparent');
-        $(".sidebar").css('background-color', 'transparent');
+    this.aboutOffset = this.document.getElementById('about').offsetTop - 200;
+  }
 
 
-      }
-    });
 
+
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    let number = this.window.pageYOffset || this.document.documentElement.offsetTop || this.document.body.scrollTop || 0;
+
+    if (number >= this.aboutOffset) {
+      this.document.getElementById("navbar").style.backgroundColor = 'black'
+    } else {
+      this.document.getElementById("navbar").style.backgroundColor = 'transparent'
+    }
   }
 
 }

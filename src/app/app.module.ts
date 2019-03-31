@@ -12,6 +12,8 @@ import { TechnologiesComponent } from './body/technologies/technologies.componen
 import { ResumeComponent } from './body/resume/resume.component';
 import { FormComponent } from './body/form/form.component';
 
+import { WINDOW_PROVIDERS } from "../services/window.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,7 @@ import { FormComponent } from './body/form/form.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
