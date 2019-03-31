@@ -1,4 +1,4 @@
-<nav id='navbar' class="navbar fixed-top">
+<nav id='navbar' class="fixed-top">
   <!-- <span id="logo">
   Jaime Moncayo hi
   <i class="fa fa-bars" aria-hidden="true" id="menu"></i>
@@ -13,7 +13,7 @@
     <li class="nav-item"><a href="#abt">About</a></li>
     <!-- <li class="nav-item"><a href="#">About</a></li> -->
     <div id="open">
-      <li id="menu"><i class="fa fa-bars" aria-hidden="true" id="menu"></i></li>
+      <li id="menu"><i class="fa fa-bars" aria-hidden="true" id="menu" (click)="toggle()"></i></li>
     </div>
 
   </ul>
@@ -22,12 +22,12 @@
 
 
 <!-- Sidebar -->
-<div class="sidebar" style="display: none;">
+<div id="sidebar" [hidden]="!initSlider" [ngClass]="{ 'slider' : initSlider , 'opened' : sidebarActive, 'closed' : !sidebarActive }">
   <div id="mySidenav" class="sidenav">
-    <a href="#abt" (click)="toggleSidebar()">About</a>
-    <a href="#exp" (click)="toggleSidebar()">Experience</a>
-    <a href="#technology" (click)="toggleSidebar()">Technology</a>
-    <a href="#res" (click)="toggleSidebar()">Resume</a>
-    <a href="#contact" (click)="toggleSidebar()">Contact</a>
+    <a href="#abt" (click)="toggle()">About</a>
+    <a href="#exp" (click)="toggle()">Experience</a>
+    <a href="#technology" (click)="toggle()">Technology</a>
+    <a href="#res" (click)="toggle()">Resume</a>
+    <a href="#contact" (click)="toggle()">Contact</a>
   </div>
 </div>

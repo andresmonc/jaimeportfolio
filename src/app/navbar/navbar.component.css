@@ -3,9 +3,40 @@
   background-color: transparent;
   overflow: hidden;
   height: var(--nav-height);
-  z-index: 4;
+  z-index: 10;
   transition: 1.5s;
 }
+
+.slider {
+  overflow-y: scroll;
+  /* complete liquid height based on the parent's height!! */
+  height: 100%;
+
+  /* only transition on transform properties which are hardware accelerated = way better performances */
+  -webkit-transition: -webkit-transform .3s ease;
+  -moz-transition: -moz-transform .3s ease;
+  -ms-transition: -ms-transform .3s ease;
+  transition: transform .3s ease;
+}
+
+.slider.opened {
+  /* visible */
+  -webkit-transform: translate(0, 0%);
+  -moz-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+}
+
+.slider.closed {
+  /* completely offscreen */
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+
+
+
 
 #logo {
   font-family: 'Lobster Two', cursive;
@@ -16,7 +47,8 @@
   margin-top: var(--nav-logo-m-top);
   padding-left: 1em;
   text-decoration: none;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: var(--nav-text-stroke);
   -webkit-text-stroke-color: black;
 
@@ -29,7 +61,8 @@
   padding-right: 2.3vh;
   padding-top: 1vh;
   display: var(--mobile-show);
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
@@ -66,14 +99,16 @@ li {
 
 a {
   /* color: var(--main-theme-color); */
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: var(--nav-text-stroke);
   -webkit-text-stroke-color: black;
 }
 
 /* side nav */
 
-.sidebar {
+#sidebar {
+  /* display: none; */
   height: 100%;
   width: 100vw;
   position: fixed;
@@ -85,24 +120,25 @@ a {
   transition: 1.5s;
 }
 
-.sidebar a {
+#sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: white;
   display: block;
   transition: 0.3s;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 
 }
 
-.sidebar a:hover {
+#sidebar a:hover {
   color: grey;
 }
 
-.sidebar .closebtn {
+#sidebar .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
