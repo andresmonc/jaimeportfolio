@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -25,7 +26,7 @@ import { WINDOW_PROVIDERS } from "../services/window.service";
     ResumeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, BrowserAnimationsModule
   ],
   providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent]

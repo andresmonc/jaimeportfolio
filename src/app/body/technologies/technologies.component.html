@@ -1,22 +1,29 @@
 <div id="technology">
-    <h1>
-        <div class="tech">
-            TECHNOLOGIES
-        </div>
+  <h1>
+    <div class="tech">
+      TECHNOLOGIES
+    </div>
 
-        <div class="worked">
-            I'VE WORKED WITH...
-        </div>
-        <div>
-            <div id="imgone" class="fixed-width-tech" style="display:none;"><img src="../../../assets/angular.svg" alt="angular logo"></div>
-            <div id="imgtwo" class="fixed-width-tech" style="display:none;"><img src="../../../assets/HTML5_Logo.svg" alt="html5 logo"></div>
-            <div id="imgthree" class="fixed-width-tech" style="display:none;"><img src="../../../assets/mongo.svg" style="width:var(--mobile-brands)" alt="mongoDB logo"></div>
-            <div id="imgfour" class="fixed-width-tech" style="display:none;"><img src="../../../assets/gitlogo.png" style="width:var(--mobile-brands)" alt="git logo"></div>
-            <div id="imgfive" class="fixed-width-tech" style="display:none;"><img src="../../../assets/nodeJS.png" style="width:var(--mobile-brands)" alt="nodeJS logo"></div>
-            <div id="imgsix" class="fixed-width-tech" style="display:none;"><img src="../../../assets/oracle.png" style="width:var(--mobile-brands)" alt="oracle logo"></div>
-            <div id="imgseven" class="fixed-width-tech" style="display:none;"><img src="../../../assets/jiralogo.svg" style="width:var(--mobile-brands)" alt="jira logo"></div>
-            <div id="imgeight" class="fixed-width-tech" style="display:none;"><img src="../../../assets/python.svg" style="width:var(--mobile-brands); height: 40%" alt="python logo"></div>
-
-        </div>
-    </h1>
+    <div class="worked">
+      I'VE WORKED WITH...
+    </div>
+    <div>
+      <div id="imgone" class="fixed-width-tech" *ngIf="imgArray[0]" [@fadeInOut]><img src="../../../assets/angular.svg"
+          alt="angular logo"></div>
+      <div id="imgtwo" class="fixed-width-tech" *ngIf="imgArray[1]" [@fadeInOut]><img
+          src="../../../assets/HTML5_Logo.svg" alt="html5 logo"></div>
+      <div id="imgthree" class="fixed-width-tech" *ngIf="imgArray[2]" [@fadeInOut]><img src="../../../assets/mongo.svg"
+          style="width:var(--mobile-brands)" alt="mongoDB logo"></div>
+      <div id="imgfour" class="fixed-width-tech" *ngIf="imgArray[3]" [@fadeInOut]><img src="../../../assets/gitlogo.png"
+          style="width:var(--mobile-brands)" alt="git logo"></div>
+      <div id="imgfive" class="fixed-width-tech" *ngIf="imgArray[4]" [@fadeInOut]><img src="../../../assets/nodeJS.png"
+          style="width:var(--mobile-brands)" alt="nodeJS logo"></div>
+      <div id="imgsix" class="fixed-width-tech" *ngIf="imgArray[5]" [@fadeInOut]><img src="../../../assets/oracle.png"
+          style="width:var(--mobile-brands)" alt="oracle logo"></div>
+      <div id="imgseven" class="fixed-width-tech" *ngIf="imgArray[6]" [@fadeInOut]><img
+          src="../../../assets/jiralogo.svg" style="width:var(--mobile-brands)" alt="jira logo"></div>
+      <div id="imgeight" class="fixed-width-tech" *ngIf="imgArray[7]" [@fadeInOut]><img src="../../../assets/python.svg"
+          style="width:var(--mobile-brands);" alt="python logo"></div>
+    </div>
+  </h1>
 </div>

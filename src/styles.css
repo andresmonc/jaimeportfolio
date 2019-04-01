@@ -26,7 +26,7 @@ section:before {
         --nav-text-stroke: 1px;
         --offset-anchors: 5vh;
         --banner-mobile: url('/assets/bm.jpg');
-        --tech-height: 60vh;
+        --tech-height: 50vh;
     }
 }
 

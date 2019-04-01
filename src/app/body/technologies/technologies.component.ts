@@ -1,23 +1,35 @@
 import { Component, OnInit } from '@angular/core';
+import { slideIn, fadeInOut } from '../../animations';
 
-declare var jquery: any;
-declare var $: any;
-var images = ['#imgone', '#imgtwo', '#imgthree', '#imgfour', '#imgfive', '#imgsix', '#imgseven', '#imgeight'],
-  imgIx = 0;
 @Component({
   selector: 'app-technologies',
   templateUrl: './technologies.component.html',
-  styleUrls: ['./technologies.component.scss']
+  styleUrls: ['./technologies.component.scss'],
+  animations: [
+    slideIn, fadeInOut
+  ]
 })
 export class TechnologiesComponent implements OnInit {
+
+  private counter: number = 0;
+  public imgArray: Array<boolean> = [false, false, false, false, false, false, false, false];
+
   constructor() { }
 
   ngOnInit() {
-    this.imageCycle();
+    setInterval(this.imgCycle, 3000)
   }
-  imageCycle() {
-    (function nextImage() {
-      $(images[imgIx++] || images[imgIx = 0, imgIx++]).hide().delay(500).show(1000).delay(1000).fadeOut(500, nextImage);
-    })();
+
+  imgCycle = () => {
+    this.imgArray[this.counter - 1] = false;
+    this.imgArray[this.counter] = true;
+    if (this.counter == 0) {
+      this.imgArray[7] = false;
+    } else if (this.counter == 7) {
+      this.counter = -1
+    }
+    this.counter++
+
   }
+
 }
