@@ -12,7 +12,7 @@ import { slideIn, fadeInOut } from '../../animations';
 export class TechnologiesComponent implements OnInit {
 
   private counter: number = 0;
-  public imgArray: Array<boolean> = [false, false, false, false, false, false, false, false];
+  public imgArray: Array<boolean> = [false, false, false, false, false, false, false, false,false];
 
   constructor() { }
 
@@ -24,8 +24,8 @@ export class TechnologiesComponent implements OnInit {
     this.imgArray[this.counter - 1] = false;
     this.imgArray[this.counter] = true;
     if (this.counter == 0) {
-      this.imgArray[7] = false;
-    } else if (this.counter == 7) {
+      this.imgArray[9] = false;
+    } else if (this.counter == 9) {
       this.counter = -1
     }
     this.counter++

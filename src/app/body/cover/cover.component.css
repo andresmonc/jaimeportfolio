@@ -3,17 +3,15 @@ img {
   height: 100vh;
 }
 
-.coverimg {
-  background-attachment: fixed;
+
+#cover {
+  background-attachment: var(--parallax-on-off);
   background-size: cover;
+  overflow: hidden;
+  height: 100vh;
   background-image: var(--cover-mobile);
   z-index: -10;
   background-attachment: 100vh;
-}
-
-#cover {
-  overflow: hidden;
-  height: 100vh;
 }
 
 /* Arrow */
@@ -90,9 +88,11 @@ section::after {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -102,9 +102,11 @@ section::after {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }

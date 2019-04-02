@@ -15,7 +15,7 @@ section:before {
         --about-photo: 40vw;
         --about-ribbon: 30vw;
         --margin-text: 3vw;
-        --experience-text-size: 4vw;
+        --experience-text-size: 5vw;
         --mobile-brands: 26vw;
         --nav-height: 8vh;
         --nav-logo-top: 0px;
@@ -27,6 +27,7 @@ section:before {
         --offset-anchors: 5vh;
         --banner-mobile: url('/assets/bm.jpg');
         --tech-height: 50vh;
+        --parallax-on-off: scroll;
     }
 }
 
@@ -39,7 +40,7 @@ section:before {
         --about-photo: 18vw;
         --about-ribbon: 10vw;
         --margin-text: 10vw;
-        --experience-text-size: 5vw;
+        --experience-text-size: 2.5vw;
         --mobile-brands: 15vw;
         --nav-height: 12vh;
         --nav-logo-top: 1vh;
@@ -51,6 +52,7 @@ section:before {
         --offset-anchors: 6.5vh;
         --banner-mobile: url('/assets/banner1.jpg');
         --tech-height: 80vh;
+        --parallax-on-off: fixed;
 
     }
 }
