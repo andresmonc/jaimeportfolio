@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  phrase = ['DevOps', 'SDLC', 'TDD', 'Agile', 'Waterfall', 'OOP'];
+  phrase = ['DevOps', 'SDLC', 'TDD', 'Agile', 'Scrum', 'OOP'];
   name: string;
   constructor() { }
 
