@@ -1,6 +1,27 @@
 #technology {
-  height: var(--tech-height)
+  height: var(--tech-height);
+  width: 100%;
 }
+
+.draggable{
+  width: var(--tech-caro-width);
+  height: 400px;
+  margin: 0 auto;
+  }
+
+.icon{
+  height: var(--tech-icon-width-height);
+  width:var(--tech-icon-width-height);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.icon i{
+  font-size: var(--tech-icon-font-size);
+  text-align: center;
+  line-height: var(--tech-icon-width-height);
+}
+
 
 .fixed-width-tech {
   position: relative;
@@ -169,7 +190,6 @@
     position: relative;
     text-align: center;
     width: 100%;
-    padding-top: 30px;
     -webkit-animation: floating-text 1.3s ease alternate infinite;
     -moz-animation: floating-text 1.3s ease alternate infinite;
     -ms-animation: floating-text 1.3s ease alternate infinite;
@@ -180,10 +200,9 @@
   .worked {
     text-align: center;
     vertical-align: middle;
-    line-height: 30vh;
+    line-height: 15vh;
     font-size: 6vw;
     width: 100%;
     top: 50px;
-    padding-top: 30px;
   }
 }

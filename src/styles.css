@@ -28,6 +28,10 @@ section:before {
         --banner-mobile: url('/assets/bm.jpg');
         --tech-height: 50vh;
         --parallax-on-off: scroll;
+        --tech-icon-width-height: 150px;
+        --tech-icon-font-size: 75px;
+        --tech-caro-width: 300px;
+
     }
 }
 
@@ -53,6 +57,10 @@ section:before {
         --banner-mobile: url('/assets/banner1.jpg');
         --tech-height: 80vh;
         --parallax-on-off: fixed;
+        --tech-icon-width-height: 250px;
+        --tech-icon-font-size: 150px;
+        --tech-caro-width: 750px;
+
 
     }
 }
