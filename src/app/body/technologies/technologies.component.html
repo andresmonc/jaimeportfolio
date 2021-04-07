@@ -12,87 +12,19 @@
     <div class="swipe-notify" (mousedown)="hideSwipeToggle()" (swipeleft)="hideSwipeToggle()" (click)="hideSwipeToggle()" [ngClass]="{'swipe-notify' : hideSwipe==false,'hide' : hideSwipe==true}">
       <img class="slide" src="../../../assets/Swipe-Left.png" alt="swipe left">
     </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: #4169e1;">
-        <i class="devicon-java-plain-wordmark colored"></i>
+    <ng-container *ngFor="let icon of icons">
+      <div drag-scroll-item>
+        <div class="icon" [ngStyle]="{'background-color' : icon[1]}">
+          <i [ngClass]="icon[0]"></i>
+        </div>
       </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: #29adbe;">
-        <i class="devicon-go-line"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: #6B5B95;">
-        <i class="devicon-nodejs-plain-wordmark colored"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: #F1502F;">
-        <i class="devicon-git-plain-wordmark" style="color: white"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: #fdfd96;">
-        <i class="devicon-express-original-wordmark colored"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: red;">
-        <i class="devicon-angularjs-plain" style="color: white"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: rgb(59, 189, 92);">
-        <i class="devicon-postgresql-plain-wordmark colored"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: black;">
-        <i class="devicon-docker-plain-wordmark colored"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: aliceblue;">
-        <i class="devicon-css3-plain-wordmark colored"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: #4B8BBE;">
-        <i class="devicon-python-plain-wordmark colored"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: #4DB33D;">
-        <i class="devicon-mongodb-plain-wordmark"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: #6B5B95;">
-        <i class="devicon-scala-plain-wordmark colored"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: aliceblue;">
-        <i class="devicon-typescript-plain colored"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: black;">
-        <i class="devicon-javascript-plain colored"></i>
-      </div>
-    </div>
-    <div drag-scroll-item>
-      <div class="icon" style="background-color: #6B5B95;">
-        <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-      </div>
-    </div>
+    </ng-container>
   </drag-scroll>
 
   <div class="nav-container">
     <i class="fa fa-arrow-circle-left" (click)="moveLeft()" aria-hidden="true"></i>
     <ul class="dots" #dots>
-      <ng-container *ngFor="let dot of cookies; let i = index">
+      <ng-container *ngFor="let dot of icons; let i = index">
         <li [ngClass]="{'dot__active' : i==selectedIndex}" class="dots__item" (click)="moveTo(i)"></li>
       </ng-container>
     </ul>
