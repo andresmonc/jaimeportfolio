@@ -26,7 +26,7 @@ section:before {
         --nav-text-stroke: 1px;
         --offset-anchors: 5vh;
         --banner-mobile: url('/assets/bm.jpg');
-        --tech-height: 50vh;
+        --tech-height: 55vh;
         --parallax-on-off: scroll;
         --tech-icon-width-height: 150px;
         --tech-icon-font-size: 75px;
@@ -55,7 +55,7 @@ section:before {
         --nav-text-stroke: 0px;
         --offset-anchors: 6.5vh;
         --banner-mobile: url('/assets/banner1.jpg');
-        --tech-height: 80vh;
+        --tech-height: 85vh;
         --parallax-on-off: fixed;
         --tech-icon-width-height: 250px;
         --tech-icon-font-size: 150px;

@@ -3,11 +3,17 @@
   width: 100%;
 }
 
+.fa{
+  font-size: 39px;
+}
+
 .draggable{
   width: var(--tech-caro-width);
-  height: 400px;
+  height: var(--tech-icon-width-height);
+  overflow: hidden;
   margin: 0 auto;
-  }
+  margin-bottom: 20px;
+}
 
 .icon{
   height: var(--tech-icon-width-height);
@@ -111,6 +117,47 @@
     animation: floating-text 1.3s ease alternate infinite;
   }
 }
+
+.nav-container {
+  // background-color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.dots {
+  /* Center the content */
+  // background-color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* Reset styles */
+  list-style-type: none;
+  padding: 0;
+}
+
+.dots__item {
+  /* Rounded border */
+  border-radius: 9999px;
+  height: 14px;
+  width: 14px;
+
+  /* Inactive dot */
+  background-color: transparent;
+  border: 1px solid rgba(44, 43, 43, 0.432);
+
+  /* OPTIONAL: Spacing between dots */
+  margin: 0 4px;
+}
+
+.dot__active{
+  background-color: rgba(21, 147, 219, 0.863);
+
+}
+
 
 @media screen and (max-width: 600px) {
   @keyframes fadeIn {

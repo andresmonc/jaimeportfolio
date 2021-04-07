@@ -8,7 +8,7 @@
       I'VE WORKED WITH...
     </div>
   </h1>
-  <drag-scroll class="draggable">
+  <drag-scroll #nav class="draggable">
     <div drag-scroll-item>
       <div class="icon" style="background-color: #4169e1;">
         <i class="devicon-java-plain-wordmark colored"></i>
@@ -85,5 +85,16 @@
       </div>
     </div>
   </drag-scroll>
+
+  <div class="nav-container">
+    <i class="fa fa-arrow-circle-left" (click)="moveLeft()" aria-hidden="true"></i>
+    <ul class="dots" #dots>
+      <ng-container *ngFor="let dot of cookies; let i = index">
+        <li [ngClass]="{'dot__active' : i==selectedIndex}" class="dots__item" (click)="moveTo(i)"></li>
+      </ng-container>
+    </ul>
+    <i class="fa fa-arrow-circle-right" (click)="moveRight()" aria-hidden="true"></i>
+</div>
+
 
 </div>
