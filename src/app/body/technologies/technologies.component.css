@@ -122,10 +122,8 @@
    align-items: center;
   display: flex;
   justify-content: center;
+  display: var(--tech-nav-display);
 }
-
-
-
 
 .dots {
   /* Center the content */

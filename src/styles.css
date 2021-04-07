@@ -31,6 +31,7 @@ section:before {
         --tech-icon-width-height: 150px;
         --tech-icon-font-size: 75px;
         --tech-caro-width: 300px;
+        --tech-nav-display: none;
 
     }
 }
@@ -60,8 +61,7 @@ section:before {
         --tech-icon-width-height: 250px;
         --tech-icon-font-size: 150px;
         --tech-caro-width: 750px;
-
-
+        --tech-nav-display: flex;
     }
 }
 
