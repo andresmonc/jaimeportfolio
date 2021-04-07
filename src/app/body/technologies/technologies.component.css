@@ -119,8 +119,7 @@
 }
 
 .nav-container {
-  // background-color: black;
-  align-items: center;
+   align-items: center;
   display: flex;
   justify-content: center;
 }
@@ -130,7 +129,6 @@
 
 .dots {
   /* Center the content */
-  // background-color: black;
   align-items: center;
   display: flex;
   justify-content: center;

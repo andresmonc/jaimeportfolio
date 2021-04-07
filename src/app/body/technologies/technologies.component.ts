@@ -6,7 +6,7 @@ import { EventEmitter } from 'events';
 @Component({
   selector: 'app-technologies',
   templateUrl: './technologies.component.html',
-  styleUrls: ['./technologies.component.scss'],
+  styleUrls: ['./technologies.component.css'],
   animations: [
     slideIn, fadeInOut
   ]
