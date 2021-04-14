@@ -7,7 +7,6 @@
   display: none;
 }
 
-
 img {
   margin-top: 25px;
   opacity: 1;
@@ -28,7 +27,7 @@ img {
   color: hsl(200, 80%, 45%);
 }
 
-.fa:hover{
+.fa:hover {
   color: hsla(200, 80%, 45%, 0.5);
 }
 
@@ -211,7 +210,7 @@ img {
   margin: 0 4px;
 }
 
-.dots__item:hover{
+.dots__item:hover {
   background-color: rgba(128, 128, 128, 0.062);
 }
 

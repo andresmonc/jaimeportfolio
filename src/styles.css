@@ -67,9 +67,9 @@ section:before {
 }
 
 @media only screen and (min-width: 1100px) {
-    :root {
-        --tech-caro-width: 1000px;
-    }
+  :root {
+    --tech-caro-width: 1000px;
+  }
 }
 
 :root {
@@ -84,7 +84,6 @@ body {
   /* line-height: 1.8; */
   scroll-behavior: smooth;
 }
-
 
 img {
   float: left;
