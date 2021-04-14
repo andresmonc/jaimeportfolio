@@ -31,6 +31,8 @@ section:before {
         --tech-icon-width-height: 150px;
         --tech-icon-font-size: 75px;
         --tech-caro-width: 300px;
+        --tech-nav-display: none;
+        --tech-swipe-display: flex;
 
     }
 }
@@ -55,13 +57,13 @@ section:before {
         --nav-text-stroke: 0px;
         --offset-anchors: 6.5vh;
         --banner-mobile: url('/assets/banner1.jpg');
-        --tech-height: 85vh;
+        --tech-height: 78vh;
         --parallax-on-off: fixed;
         --tech-icon-width-height: 250px;
         --tech-icon-font-size: 150px;
         --tech-caro-width: 750px;
-
-
+        --tech-nav-display: flex;
+        --tech-swipe-display: none;
     }
 }
 
