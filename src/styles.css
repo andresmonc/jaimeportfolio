@@ -42,7 +42,7 @@ section:before {
   :root {
     --mobile-show: none;
     --desktop-show: block;
-    --about-photo: 13vw;
+    --about-photo: 20vw;
     --about-ribbon: 10vw;
     --margin-text: 10vw;
     --experience-text-size: 3vw;
@@ -69,6 +69,7 @@ section:before {
 @media only screen and (min-width: 1100px) {
     :root {
         --tech-caro-width: 1000px;
+        --about-photo: 12vw;
     }
 }
 
