@@ -1,7 +1,6 @@
 import { Component, ViewChild, ViewChildren } from "@angular/core";
 import { slideIn, fadeInOut } from "../../animations";
 import { DragScrollComponent } from "ngx-drag-scroll";
-import { EventEmitter } from "events";
 
 @Component({
   selector: "app-technologies",
