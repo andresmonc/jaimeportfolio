@@ -67,10 +67,10 @@ section:before {
 }
 
 @media only screen and (min-width: 1100px) {
-    :root {
-        --tech-caro-width: 1000px;
-        --about-photo: 12vw;
-    }
+  :root {
+    --tech-caro-width: 1000px;
+    --about-photo: 12vw;
+  }
 }
 
 :root {
