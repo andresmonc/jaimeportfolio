@@ -1,4 +1,5 @@
 #navbar {
+  padding-top: 20px;
   letter-spacing: 0.025em;
   background-color: transparent;
   overflow: hidden;
@@ -55,7 +56,6 @@
   float: right;
   font-size: 4vh;
   padding-right: 2.3vh;
-  padding-top: 1vh;
   display: var(--mobile-show);
   -webkit-text-fill-color: white;
   /* Will override color (regardless of order) */
@@ -70,7 +70,7 @@
   display: var(--desktop-show);
   text-align: right;
   padding-right: 1em;
-  padding-top: 4.6vh;
+  padding-top: 2.5vh;
   text-decoration: none;
   float: right;
 }
@@ -117,7 +117,7 @@ a {
 }
 
 #sidebar a {
-  padding: 8px 8px 8px 32px;
+  padding: 19px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: white;

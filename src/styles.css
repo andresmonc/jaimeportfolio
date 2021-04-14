@@ -26,7 +26,7 @@ section:before {
     --nav-text-stroke: 1px;
     --offset-anchors: 5vh;
     --banner-mobile: url("/assets/bm.jpg");
-    --tech-height: 55vh;
+    --tech-height: 60vh;
     --parallax-on-off: scroll;
     --tech-icon-width-height: 150px;
     --tech-icon-font-size: 75px;
@@ -42,12 +42,12 @@ section:before {
   :root {
     --mobile-show: none;
     --desktop-show: block;
-    --about-photo: 18vw;
+    --about-photo: 13vw;
     --about-ribbon: 10vw;
     --margin-text: 10vw;
     --experience-text-size: 3vw;
     --mobile-brands: 15vw;
-    --nav-height: 12vh;
+    --nav-height: 10vh;
     --nav-logo-top: 1vh;
     --page-margin-top: 0vh;
     --nav-logo-m-top: 0px;
@@ -66,6 +66,12 @@ section:before {
   }
 }
 
+@media only screen and (min-width: 1100px) {
+    :root {
+        --tech-caro-width: 1000px;
+    }
+}
+
 :root {
   --main-theme-bgcolor: black;
   --main-theme-color: white;
@@ -75,9 +81,10 @@ html,
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  line-height: 1.8;
+  /* line-height: 1.8; */
   scroll-behavior: smooth;
 }
+
 
 img {
   float: left;

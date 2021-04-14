@@ -54,5 +54,8 @@ export class TechnologiesComponent {
     this.ds.indexChanged.subscribe((index) => {
       this.selectedIndex = index;
     });
+    setInterval(()=>{
+      this.moveRight();
+    },1500)
   }
 }
