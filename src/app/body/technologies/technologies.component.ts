@@ -1,25 +1,22 @@
-import { Component,ViewChild,ViewChildren } from '@angular/core';
-import { slideIn, fadeInOut } from '../../animations';
-import { DragScrollComponent } from 'ngx-drag-scroll';
-import { EventEmitter } from 'events';
+import { Component, ViewChild, ViewChildren } from "@angular/core";
+import { slideIn, fadeInOut } from "../../animations";
+import { DragScrollComponent } from "ngx-drag-scroll";
+import { EventEmitter } from "events";
 
 @Component({
-  selector: 'app-technologies',
-  templateUrl: './technologies.component.html',
-  styleUrls: ['./technologies.component.css'],
-  animations: [
-    slideIn, fadeInOut
-  ]
+  selector: "app-technologies",
+  templateUrl: "./technologies.component.html",
+  styleUrls: ["./technologies.component.css"],
+  animations: [slideIn, fadeInOut],
 })
-
 export class TechnologiesComponent {
-  @ViewChild('nav', {read: DragScrollComponent}) ds: DragScrollComponent;
+  @ViewChild("nav", { read: DragScrollComponent }) ds: DragScrollComponent;
 
-  constructor() { }
+  constructor() {}
   public selectedIndex = 0;
   public hideSwipe = false;
 
-  public  icons = [
+  public icons = [
     ["devicon-java-plain-wordmark colored", "#4169e1"],
     ["devicon-go-line", "#29adbe"],
     ["devicon-nodejs-plain-wordmark colored", "#6B5B95"],
@@ -35,9 +32,9 @@ export class TechnologiesComponent {
     ["devicon-typescript-plain colored", "#aliceblue"],
     ["devicon-javascript-plain colored", "black"],
     ["devicon-amazonwebservices-plain-wordmark colored", "#6B5B95"],
-  ]
+  ];
 
-  hideSwipeToggle(){
+  hideSwipeToggle() {
     this.hideSwipe = true;
   }
 
@@ -47,8 +44,6 @@ export class TechnologiesComponent {
 
   moveRight() {
     this.ds.moveRight();
-
-
   }
 
   moveTo(index) {
@@ -56,9 +51,8 @@ export class TechnologiesComponent {
   }
 
   ngAfterViewInit() {
-    this.ds.indexChanged.subscribe(index => {
+    this.ds.indexChanged.subscribe((index) => {
       this.selectedIndex = index;
-    })
+    });
   }
-
 }

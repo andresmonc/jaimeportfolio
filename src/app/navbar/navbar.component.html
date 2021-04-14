@@ -1,4 +1,4 @@
-<nav id='navbar' class="fixed-top">
+<nav id="navbar" class="fixed-top">
   <!-- <span id="logo">
   Jaime Moncayo hi
   <i class="fa fa-bars" aria-hidden="true" id="menu"></i>
@@ -12,15 +12,22 @@
     <li class="nav-item"><a href="#exp">Experience</a></li>
     <li class="nav-item"><a href="#abt">About</a></li>
     <!-- <li class="nav-item"><a href="#">About</a></li> -->
-    <li id="menu"><i class="fa fa-bars" aria-hidden="true" (click)="toggle()"></i></li>
+    <li id="menu">
+      <i class="fa fa-bars" aria-hidden="true" (click)="toggle()"></i>
+    </li>
   </ul>
-
 </nav>
 
-
 <!-- Sidebar -->
-<div id="sidebar" [hidden]="!initSlider"
-  [ngClass]="{ 'slider' : initSlider , 'opened' : sidebarActive, 'closed' : !sidebarActive }">
+<div
+  id="sidebar"
+  [hidden]="!initSlider"
+  [ngClass]="{
+    slider: initSlider,
+    opened: sidebarActive,
+    closed: !sidebarActive
+  }"
+>
   <div id="mySidenav" class="sidenav">
     <a href="#abt" (click)="toggle()">About</a>
     <a href="#exp" (click)="toggle()">Experience</a>

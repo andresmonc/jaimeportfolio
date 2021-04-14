@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+  selector: "app-experience",
+  templateUrl: "./experience.component.html",
+  styleUrls: ["./experience.component.css"],
 })
 export class ExperienceComponent implements OnInit {
-  phrase = ['DevOps', 'SDLC', 'TDD', 'Agile', 'Scrum', 'OOP'];
+  phrase = ["DevOps", "SDLC", "TDD", "Agile", "Scrum", "OOP"];
   name: string;
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.timeOut();
@@ -23,6 +23,5 @@ export class ExperienceComponent implements OnInit {
       this.name = this.phrase[count];
       count++;
     }, 1500);
-
   }
 }

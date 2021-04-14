@@ -1,94 +1,94 @@
 #about {
-    max-width: 100% !important;
-    height: auto;
-    margin: 1.5em;
-    margin-bottom: 6vh;
-    padding-bottom: 0;
-
+  max-width: 100% !important;
+  height: auto;
+  margin: 1.5em;
+  margin-bottom: 6vh;
+  padding-bottom: 0;
 }
 
 #about-text {
-    padding-top: 0;
-    margin-top: 0;
-    display: block;
-    margin-right: var(--margin-text);
-    margin-left: var(--margin-text);
-    text-align-last: left;
-    text-align: justify;
-    word-spacing:-1px;
-    -moz-text-align-last: left;
-    font-family: 'Roboto Slab',serif;
-    font-weight: 400;
-    font-size: 1.1em;
-    color: #212529;
-    box-sizing: border-box;
+  padding-top: 0;
+  margin-top: 0;
+  display: block;
+  margin-right: var(--margin-text);
+  margin-left: var(--margin-text);
+  text-align-last: left;
+  text-align: justify;
+  word-spacing: -1px;
+  -moz-text-align-last: left;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #212529;
+  box-sizing: border-box;
 }
 
-#aboutphoto-container{
-    display: block;
-    margin: 0;
-    padding: 0;
+#aboutphoto-container {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 #aboutphoto {
-    float: none;
-    border-radius: 50%;
-    max-width: var(--about-photo);
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  float: none;
+  border-radius: 50%;
+  max-width: var(--about-photo);
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ribbon */
 .ribbon {
- font-size: 1.4em !important;
- /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
- width: var(--about-ribbon);
- bottom: 40px;
- box-shadow: 0 10px 15px #000a;
- position: relative;
- background: #4286f4;
- color: #fff;
- text-align: center;
- padding: .5em 1em; /* Adjust to suit */
- margin: 0em auto 0em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  font-size: 1.4em !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: var(--about-ribbon);
+  bottom: 40px;
+  box-shadow: 0 10px 15px #000a;
+  position: relative;
+  background: #4286f4;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em; /* Adjust to suit */
+  margin: 0em auto 0em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
-.ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -1em;
- border: 1.5em solid #4286f4;
- z-index: -2;
-
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #4286f4;
+  z-index: -2;
 }
 .ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
- border-left-color: transparent;
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
   box-shadow: 10px 1px 10px #000a;
 }
 .ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
- border-right-color: transparent;
-box-shadow: -10px 1px 10px #000a;
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+  box-shadow: -10px 1px 10px #000a;
 }
 
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color:#4286f4 transparent transparent transparent;
- bottom: -1em;
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #4286f4 transparent transparent transparent;
+  bottom: -1em;
 }
 .ribbon .ribbon-content:before {
- left: 0;
- border-width: 1em 0 0 1em;
+  left: 0;
+  border-width: 1em 0 0 1em;
 }
 .ribbon .ribbon-content:after {
- right: 0;
- border-width: 1em 1em 0 0;
+  right: 0;
+  border-width: 1em 1em 0 0;
 }

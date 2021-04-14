@@ -1,20 +1,29 @@
 <div id="technology">
   <h1>
-    <div class="tech">
-      TECHNOLOGIES
-    </div>
+    <div class="tech">TECHNOLOGIES</div>
 
-    <div class="worked">
-      I'VE WORKED WITH...
-    </div>
+    <div class="worked">I'VE WORKED WITH...</div>
   </h1>
   <drag-scroll #nav class="draggable">
-    <div class="swipe-notify" (mousedown)="hideSwipeToggle()" (swipeleft)="hideSwipeToggle()" (click)="hideSwipeToggle()" [ngClass]="{'swipe-notify' : hideSwipe==false,'hide' : hideSwipe==true}">
-      <img class="slide" src="../../../assets/Swipe-Left.png" alt="swipe left">
+    <div
+      class="swipe-notify"
+      (mousedown)="hideSwipeToggle()"
+      (swipeleft)="hideSwipeToggle()"
+      (click)="hideSwipeToggle()"
+      [ngClass]="{
+        'swipe-notify': hideSwipe == false,
+        hide: hideSwipe == true
+      }"
+    >
+      <img
+        class="slide"
+        src="../../../assets/Swipe-Left.png"
+        alt="swipe left"
+      />
     </div>
     <ng-container *ngFor="let icon of icons">
       <div drag-scroll-item>
-        <div class="icon" [ngStyle]="{'background-color' : icon[1]}">
+        <div class="icon" [ngStyle]="{ 'background-color': icon[1] }">
           <i [ngClass]="icon[0]"></i>
         </div>
       </div>
@@ -22,14 +31,24 @@
   </drag-scroll>
 
   <div class="nav-container">
-    <i class="fa fa-arrow-circle-left" (click)="moveLeft()" aria-hidden="true"></i>
+    <i
+      class="fa fa-arrow-circle-left"
+      (click)="moveLeft()"
+      aria-hidden="true"
+    ></i>
     <ul class="dots" #dots>
       <ng-container *ngFor="let dot of icons; let i = index">
-        <li [ngClass]="{'dot__active' : i==selectedIndex}" class="dots__item" (click)="moveTo(i)"></li>
+        <li
+          [ngClass]="{ dot__active: i == selectedIndex }"
+          class="dots__item"
+          (click)="moveTo(i)"
+        ></li>
       </ng-container>
     </ul>
-    <i class="fa fa-arrow-circle-right" (click)="moveRight()" aria-hidden="true"></i>
-</div>
-
-
+    <i
+      class="fa fa-arrow-circle-right"
+      (click)="moveRight()"
+      aria-hidden="true"
+    ></i>
+  </div>
 </div>
