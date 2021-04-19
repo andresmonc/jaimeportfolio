@@ -4,12 +4,11 @@
 
     <div class="worked" style="margin-top: 10vh">I'VE WORKED WITH...</div>
   </h1>
-  <drag-scroll #nav class="draggable">
+  <drag-scroll #nav class="draggable"       (mousedown)="interaction()"
+  (swipeleft)="interaction()"
+  (click)="interaction()">
     <div
       class="swipe-notify"
-      (mousedown)="hideSwipeToggle()"
-      (swipeleft)="hideSwipeToggle()"
-      (click)="hideSwipeToggle()"
       [ngClass]="{
         'swipe-notify': hideSwipe == false,
         hide: hideSwipe == true

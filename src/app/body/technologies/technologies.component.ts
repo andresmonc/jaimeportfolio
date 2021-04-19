@@ -50,7 +50,13 @@ export class TechnologiesComponent {
     this.ds.moveTo(index);
   }
 
+  resetCarousel(){
+    this.moveTo(0);
+    this.scrollCarousel();
+  }
+
   scrollCarousel() {
+    this.stopCarousel()
     this.intervalID = setInterval(() => {
       if (this.ds.currIndex == this.icons.length - 1) {
         this.moveTo(0);
@@ -60,17 +66,33 @@ export class TechnologiesComponent {
     }, 1500);
   }
 
-  tempStopCarousel() {
+  stopCarousel(){
     clearInterval(this.intervalID);
+  }
+
+  tempStopCarousel() {
+    this.stopCarousel()
     setTimeout(() => {
       this.scrollCarousel();
     }, 5000);
   }
 
+  interaction(){
+    console.log("I've been interacted with");
+    this.stopCarousel
+    this.hideSwipeToggle();
+    this.tempStopCarousel();
+  }
+
   ngAfterViewInit() {
-    this.ds.dragStart.subscribe(() => {
-      this.tempStopCarousel();
-    });
+    this.ds.reachesRightBound.subscribe((b) => {
+      if(b){
+        this.stopCarousel();
+        setTimeout(() => {
+          this.resetCarousel();
+        }, 5000);
+      }
+    })
     this.ds.indexChanged.subscribe((index) => {
       this.selectedIndex = index;
     });
