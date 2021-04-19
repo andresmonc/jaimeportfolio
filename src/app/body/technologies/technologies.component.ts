@@ -34,28 +34,28 @@ export class TechnologiesComponent {
     ["devicon-amazonwebservices-plain-wordmark colored", "#6B5B95"],
   ];
 
-  hideSwipeToggle() {
+  hideSwipeToggle(): void {
     this.hideSwipe = true;
   }
 
-  moveLeft() {
+  moveLeft(): void {
     this.ds.moveLeft();
   }
 
-  moveRight() {
+  moveRight(): void {
     this.ds.moveRight();
   }
 
-  moveTo(index) {
+  moveTo(index): void {
     this.ds.moveTo(index);
   }
 
-  resetCarousel() {
+  resetCarousel(): void {
     this.moveTo(0);
     this.scrollCarousel();
   }
 
-  scrollCarousel() {
+  scrollCarousel(): void {
     this.stopCarousel();
     this.intervalID = setInterval(() => {
       if (this.ds.currIndex == this.icons.length - 1) {
@@ -66,25 +66,25 @@ export class TechnologiesComponent {
     }, 1500);
   }
 
-  stopCarousel() {
+  stopCarousel(): void {
     clearInterval(this.intervalID);
   }
 
-  tempStopCarousel() {
+  tempStopCarousel(): void {
     this.stopCarousel();
     setTimeout(() => {
       this.scrollCarousel();
     }, 5000);
   }
 
-  interaction() {
+  interaction(): void {
     console.log("I've been interacted with");
     this.stopCarousel;
     this.hideSwipeToggle();
     this.tempStopCarousel();
   }
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     this.ds.reachesRightBound.subscribe((b) => {
       if (b) {
         this.stopCarousel();
