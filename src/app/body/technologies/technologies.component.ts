@@ -11,7 +11,7 @@ import { DragScrollComponent } from "ngx-drag-scroll";
 export class TechnologiesComponent {
   @ViewChild("nav", { read: DragScrollComponent }) ds: DragScrollComponent;
 
-  constructor() { }
+  constructor() {}
   public selectedIndex: number = 0;
   public hideSwipe: boolean = false;
   private intervalID: NodeJS.Timer;
@@ -60,18 +60,20 @@ export class TechnologiesComponent {
     }, 1500);
   }
 
-  tempStopCarousel(){
-    clearInterval(this.intervalID)
-    setTimeout(() => { this.scrollCarousel(); }, 5000);
+  tempStopCarousel() {
+    clearInterval(this.intervalID);
+    setTimeout(() => {
+      this.scrollCarousel();
+    }, 5000);
   }
 
   ngAfterViewInit() {
     this.ds.dragStart.subscribe(() => {
-      this.tempStopCarousel()
+      this.tempStopCarousel();
     });
     this.ds.indexChanged.subscribe((index) => {
       this.selectedIndex = index;
     });
-    this.scrollCarousel()
+    this.scrollCarousel();
   }
 }
