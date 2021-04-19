@@ -11,9 +11,10 @@ import { DragScrollComponent } from "ngx-drag-scroll";
 export class TechnologiesComponent {
   @ViewChild("nav", { read: DragScrollComponent }) ds: DragScrollComponent;
 
-  constructor() {}
-  public selectedIndex = 0;
-  public hideSwipe = false;
+  constructor() { }
+  public selectedIndex: number = 0;
+  public hideSwipe: boolean = false;
+  private intervalID: NodeJS.Timer;
 
   public icons = [
     ["devicon-java-plain-wordmark colored", "#4169e1"],
@@ -49,12 +50,28 @@ export class TechnologiesComponent {
     this.ds.moveTo(index);
   }
 
+  scrollCarousel() {
+    this.intervalID = setInterval(() => {
+      if (this.ds.currIndex == this.icons.length - 1) {
+        this.moveTo(0);
+      } else {
+        this.moveRight();
+      }
+    }, 1500);
+  }
+
+  tempStopCarousel(){
+    clearInterval(this.intervalID)
+    setTimeout(() => { this.scrollCarousel(); }, 5000);
+  }
+
   ngAfterViewInit() {
+    this.ds.dragStart.subscribe(() => {
+      this.tempStopCarousel()
+    });
     this.ds.indexChanged.subscribe((index) => {
       this.selectedIndex = index;
     });
-    setInterval(() => {
-      this.moveRight();
-    }, 1500);
+    this.scrollCarousel()
   }
 }

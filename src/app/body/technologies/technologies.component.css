@@ -1,5 +1,6 @@
 #technology {
   height: var(--tech-height);
+  min-height: 475px;
   width: 100%;
 }
 
