@@ -8,11 +8,6 @@
   display: none;
 }
 
-img {
-  margin-top: 25px;
-  opacity: 1;
-}
-
 .swipe-notify {
   display: var(--tech-swipe-display);
   text-align: center;
