@@ -56,7 +56,7 @@ section:before {
     --nav-text-stroke: 0px;
     --offset-anchors: 6.5vh;
     --banner-mobile: url("/assets/banner1.jpg");
-    --tech-height: 78vh;
+    --tech-height: 100%;
     --parallax-on-off: fixed;
     --tech-icon-width-height: 250px;
     --tech-icon-font-size: 150px;
