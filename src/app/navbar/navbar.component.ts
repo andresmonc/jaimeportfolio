@@ -42,8 +42,8 @@ export class NavbarComponent {
       0;
 
     if (number >= this.aboutOffset) {
-      this.document.getElementById("navbar").style.backgroundColor = "black";
-      this.document.getElementById("sidebar").style.backgroundColor = "black";
+      this.document.getElementById("navbar").style.backgroundColor = "#212529";
+      this.document.getElementById("sidebar").style.backgroundColor = "#212529";
     } else {
       this.document.getElementById("navbar").style.backgroundColor =
         "transparent";
