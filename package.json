@@ -4,11 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build --configuration production",
+    "build:dev": "ng build",
     "format": "prettier --write .",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npm run build && npx wrangler pages deploy public"
   },
   "private": true,
   "dependencies": {
