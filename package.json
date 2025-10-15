@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build --configuration production",
+    "build": "ng build --configuration production",
     "build:dev": "ng build",
     "format": "prettier --write .",
     "test": "ng test",
