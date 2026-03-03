@@ -26,13 +26,7 @@ section:before {
     --nav-text-stroke: 0px;
     --offset-anchors: 5vh;
     --banner-mobile: url("/assets/bm.jpg");
-    --tech-height: 60vh;
     --parallax-on-off: scroll;
-    --tech-icon-width-height: 150px;
-    --tech-icon-font-size: 75px;
-    --tech-caro-width: 300px;
-    --tech-nav-display: none;
-    --tech-swipe-display: flex;
   }
 }
 
@@ -56,19 +50,12 @@ section:before {
     --nav-text-stroke: 0px;
     --offset-anchors: 6.5vh;
     --banner-mobile: url("/assets/banner1.jpg");
-    --tech-height: 100%;
     --parallax-on-off: fixed;
-    --tech-icon-width-height: 250px;
-    --tech-icon-font-size: 150px;
-    --tech-caro-width: 750px;
-    --tech-nav-display: flex;
-    --tech-swipe-display: none;
   }
 }
 
 @media only screen and (min-width: 1100px) {
   :root {
-    --tech-caro-width: 1000px;
     --about-photo: 12vw;
   }
 }
