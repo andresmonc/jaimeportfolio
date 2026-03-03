@@ -1,46 +1,33 @@
 #navbar {
   padding-top: 20px;
-  letter-spacing: 0.025em;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(8px);
-  border-bottom: 2px solid rgba(66, 134, 244, 0.3);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.04em;
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(108, 99, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   height: var(--nav-height);
   z-index: 10;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #navbar:hover {
-  border-bottom-color: rgba(66, 134, 244, 0.6);
-  background: rgba(0, 0, 0, 0.85);
+  border-bottom-color: rgba(108, 99, 255, 0.35);
+  background: rgba(10, 10, 10, 0.9);
 }
 
 .slider {
   overflow-y: scroll;
-  /* complete liquid height based on the parent's height!! */
   height: 100%;
-
-  /* only transition on transform properties which are hardware accelerated = way better performances */
-  -webkit-transition: -webkit-transform 0.3s ease;
-  -moz-transition: -moz-transform 0.3s ease;
-  -ms-transition: -ms-transform 0.3s ease;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slider.opened {
-  /* visible */
-  -webkit-transform: translate(0, 0%);
-  -moz-transform: translate(0, 0%);
-  -ms-transform: translate(0, 0%);
   transform: translate(0, 0%);
 }
 
 .slider.closed {
-  /* completely offscreen */
-  -webkit-transform: translate(0, -100%);
-  -moz-transform: translate(0, -100%);
-  -ms-transform: translate(0, -100%);
   transform: translate(0, -100%);
 }
 
@@ -51,12 +38,24 @@
   text-align: left;
   padding-top: var(--nav-logo-top);
   margin-top: var(--nav-logo-m-top);
-  padding-left: 1em;
+  padding-left: 1.2em;
   text-decoration: none;
-  -webkit-text-fill-color: white;
-  /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: var(--nav-text-stroke);
-  -webkit-text-stroke-color: black;
+}
+
+#logo a {
+  background: linear-gradient(135deg, #6c63ff, #00d4aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-stroke-width: 0;
+  transition: opacity 0.3s ease;
+}
+
+#logo a:hover {
+  opacity: 0.8;
+  -webkit-text-fill-color: transparent;
+  transform: none;
+  text-shadow: none;
 }
 
 #menu {
@@ -66,18 +65,18 @@
   padding-right: 2.3vh;
   display: var(--mobile-show);
   -webkit-text-fill-color: white;
-  /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0;
+  cursor: pointer;
 }
 
 .nav-item {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5vh;
-  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 2.3vh;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   display: var(--desktop-show);
   text-align: right;
-  padding-right: 1em;
+  padding-right: 1.2em;
   padding-top: 2.5vh;
   text-decoration: none;
   float: right;
@@ -102,24 +101,20 @@ li {
 }
 
 a {
-  /* color: var(--main-theme-color); */
-  -webkit-text-fill-color: white;
-  /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: var(--nav-text-stroke);
-  -webkit-text-stroke-color: black;
-  transition: all 0.3s ease;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.85);
+  -webkit-text-stroke-width: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover {
-  -webkit-text-fill-color: #4286f4;
-  transform: translateY(-2px);
-  text-shadow: 0 0 15px rgba(66, 134, 244, 0.6);
+  -webkit-text-fill-color: #6c63ff;
+  transform: translateY(-1px);
+  text-shadow: 0 0 20px rgba(108, 99, 255, 0.4);
 }
 
 /* side nav */
 
 #sidebar {
-  /* display: none; */
   height: 100%;
   width: 100vw;
   position: fixed;
@@ -128,24 +123,26 @@ a:hover {
   right: 0;
   background-color: transparent;
   overflow-x: hidden;
-  transition: 1.5s;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #sidebar a {
   padding: 19px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   color: white;
   display: block;
-  transition: 0.3s;
-  -webkit-text-fill-color: white;
-  /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  transition: all 0.3s ease;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
+  -webkit-text-stroke-width: 0;
 }
 
 #sidebar a:hover {
-  color: grey;
+  color: #6c63ff;
+  -webkit-text-fill-color: #6c63ff;
+  padding-left: 40px;
 }
 
 #sidebar .closebtn {
@@ -157,48 +154,16 @@ a:hover {
 }
 
 .fadein {
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s; /* Firefox < 16 */
-  -ms-animation: fadein 3s; /* Internet Explorer */
-  -o-animation: fadein 3s; /* Opera < 12.1 */
-  animation: fadein 3s;
+  animation: fadein 0.8s ease-out;
 }
 
 @keyframes fadein {
   from {
     opacity: 0;
+    transform: translateY(-8px);
   }
   to {
     opacity: 1;
-  }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+    transform: translateY(0);
   }
 }
