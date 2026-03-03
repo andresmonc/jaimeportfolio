@@ -10,8 +10,10 @@ import { WINDOW } from "../../services/window.service";
 })
 export class NavbarComponent {
   private aboutOffset: Number;
+  private coverHeight: number;
   public sidebarActive: boolean = false;
   public initSlider: boolean = false;
+  public showLogo: boolean = false;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -20,6 +22,8 @@ export class NavbarComponent {
 
   ngOnInit() {
     this.aboutOffset = this.document.getElementById("about").offsetTop - 200;
+    const coverEl = this.document.getElementById("cover");
+    this.coverHeight = coverEl ? coverEl.offsetHeight : this.window.innerHeight;
   }
 
   toggleSidebar() {}
@@ -40,6 +44,8 @@ export class NavbarComponent {
       this.document.documentElement.offsetTop ||
       this.document.body.scrollTop ||
       0;
+
+    this.showLogo = number >= this.coverHeight * 0.6;
 
     if (number >= this.aboutOffset) {
       this.document.getElementById("navbar").style.backgroundColor =
