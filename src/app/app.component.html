@@ -2,18 +2,22 @@
 <main>
   <app-cover></app-cover>
 
-  <section id="abt">
+  <section id="abt" appAnimateOnScroll animationClass="fade-in-up">
     <app-about></app-about>
   </section>
-  <section id="exp">
+  <section id="exp" appAnimateOnScroll animationClass="fade-in-left">
     <app-experience></app-experience>
   </section>
 
-  <app-technologies></app-technologies>
+  <section appAnimateOnScroll animationClass="fade-in-up">
+    <app-technologies></app-technologies>
+  </section>
 
-  <section id="res">
+  <section id="res" appAnimateOnScroll animationClass="fade-in-right">
     <app-resume></app-resume>
   </section>
 
-  <app-contact></app-contact>
+  <section appAnimateOnScroll animationClass="fade-in-up">
+    <app-contact></app-contact>
+  </section>
 </main>

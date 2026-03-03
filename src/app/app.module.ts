@@ -12,6 +12,7 @@ import { ExperienceComponent } from "./body/experience/experience.component";
 import { TechnologiesComponent } from "./body/technologies/technologies.component";
 import { ResumeComponent } from "./body/resume/resume.component";
 import { WINDOW_PROVIDERS } from "../services/window.service";
+import { AnimateOnScrollDirective } from "./animate-on-scroll.directive";
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { WINDOW_PROVIDERS } from "../services/window.service";
     ExperienceComponent,
     TechnologiesComponent,
     ResumeComponent,
+    AnimateOnScrollDirective,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, DragScrollModule],
   providers: [WINDOW_PROVIDERS],
