@@ -22,11 +22,9 @@ section:before {
     --nav-logo-m-top: -6px;
     --page-margin-top: 0vh;
     --offset-height: 7vh;
-    --cover-mobile: url("assets/cm.jpg");
     --nav-text-stroke: 0px;
     --offset-anchors: 5vh;
     --banner-mobile: url("/assets/bm.jpg");
-    --parallax-on-off: scroll;
   }
 }
 
@@ -46,11 +44,9 @@ section:before {
     --page-margin-top: 0vh;
     --nav-logo-m-top: 0px;
     --offset-height: 10vh;
-    --cover-mobile: url("assets/c1.jpg");
     --nav-text-stroke: 0px;
     --offset-anchors: 6.5vh;
     --banner-mobile: url("/assets/banner1.jpg");
-    --parallax-on-off: fixed;
   }
 }
 
@@ -129,4 +125,28 @@ a:visited {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Animate on scroll */
+
+.aos-init {
+  opacity: 0;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.aos-init.fade-in-up {
+  transform: translateY(40px);
+}
+
+.aos-init.fade-in-left {
+  transform: translateX(-40px);
+}
+
+.aos-init.fade-in-right {
+  transform: translateX(40px);
+}
+
+.aos-init.aos-animate {
+  opacity: 1;
+  transform: translate(0);
 }
