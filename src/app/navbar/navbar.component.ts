@@ -12,6 +12,7 @@ export class NavbarComponent {
   private aboutOffset: Number;
   public sidebarActive: boolean = false;
   public initSlider: boolean = false;
+  public showLogo: boolean = false;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -40,6 +41,10 @@ export class NavbarComponent {
       this.document.documentElement.offsetTop ||
       this.document.body.scrollTop ||
       0;
+
+    const coverEl = this.document.getElementById("cover");
+    const coverHeight = coverEl ? coverEl.offsetHeight : this.window.innerHeight;
+    this.showLogo = number >= coverHeight * 0.6;
 
     if (number >= this.aboutOffset) {
       this.document.getElementById("navbar").style.backgroundColor =
