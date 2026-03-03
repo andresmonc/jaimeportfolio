@@ -14,7 +14,7 @@ section:before {
     --desktop-show: none;
     --about-photo: 40vw;
     --about-ribbon: 30vw;
-    --margin-text: 3vw;
+    --margin-text: 5vw;
     --experience-text-size: 5vw;
     --mobile-brands: 26vw;
     --nav-height: 8vh;
@@ -23,7 +23,7 @@ section:before {
     --page-margin-top: 0vh;
     --offset-height: 7vh;
     --cover-mobile: url("assets/cm.jpg");
-    --nav-text-stroke: 1px;
+    --nav-text-stroke: 0px;
     --offset-anchors: 5vh;
     --banner-mobile: url("/assets/bm.jpg");
     --tech-height: 60vh;
@@ -74,16 +74,27 @@ section:before {
 }
 
 :root {
-  --main-theme-bgcolor: black;
-  --main-theme-color: white;
+  --main-theme-bgcolor: #0a0a0a;
+  --main-theme-color: #f0f0f0;
+  --accent-primary: #6c63ff;
+  --accent-secondary: #00d4aa;
+  --accent-gradient: linear-gradient(135deg, #6c63ff 0%, #00d4aa 100%);
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a68;
+  --surface-light: #ffffff;
+  --surface-dark: #0a0a0a;
+  --border-subtle: rgba(108, 99, 255, 0.15);
 }
 
 html,
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  /* line-height: 1.8; */
+  font-family: "Inter", "Roboto", sans-serif;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  background: var(--surface-light);
 }
 
 img {
@@ -104,17 +115,19 @@ a:visited {
   text-decoration: none;
 }
 
+::selection {
+  background: var(--accent-primary);
+  color: white;
+}
+
 .loader {
-  border: 16px solid #f3f3f3;
-  /* Light grey */
-  border-top: 16px solid #3498db;
-  /* Blue */
+  border: 4px solid rgba(108, 99, 255, 0.15);
+  border-top: 4px solid var(--accent-primary);
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
+  width: 48px;
+  height: 48px;
+  animation: spin 0.8s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   position: absolute;
-  /*it can be fixed too*/
   left: 0;
   right: 0;
   top: 0;

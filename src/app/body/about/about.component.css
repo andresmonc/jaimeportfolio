@@ -1,32 +1,25 @@
 #about {
-  max-width: 100% !important;
-  height: auto;
-  margin: 1.5em;
-  margin-bottom: 6vh;
-  padding-bottom: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4em 2em 5em;
 }
 
 #about-text {
-  padding-top: 0;
-  margin-top: 0;
   display: block;
-  margin-right: var(--margin-text);
-  margin-left: var(--margin-text);
-  text-align-last: left;
-  text-align: justify;
-  word-spacing: -1px;
-  -moz-text-align-last: left;
+  text-align: left;
+  line-height: 1.8;
   font-family: "Roboto Slab", serif;
-  font-weight: 400;
-  font-size: 1.1em;
-  color: #212529;
+  font-weight: 300;
+  font-size: 1.05em;
+  color: var(--text-secondary, #4a4a68);
   box-sizing: border-box;
 }
 
 #aboutphoto-container {
-  display: block;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
 }
 
 #aboutphoto {
@@ -37,58 +30,37 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 4px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(135deg, #6c63ff, #00d4aa);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 8px 30px rgba(108, 99, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ribbon */
-.ribbon {
-  font-size: 1.4em !important;
-  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-  width: var(--about-ribbon);
-  bottom: 40px;
-  box-shadow: 0 10px 15px #000a;
-  position: relative;
-  background: #4286f4;
-  color: #fff;
+#aboutphoto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(108, 99, 255, 0.25);
+}
+
+.section-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--text-primary, #1a1a2e);
   text-align: center;
-  padding: 0.5em 1em; /* Adjust to suit */
-  margin: 0em auto 0em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-}
-.ribbon:before,
-.ribbon:after {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: -1em;
-  border: 1.5em solid #4286f4;
-  z-index: -2;
-}
-.ribbon:before {
-  left: -2em;
-  border-right-width: 1.5em;
-  border-left-color: transparent;
-  box-shadow: 10px 1px 10px #000a;
-}
-.ribbon:after {
-  right: -2em;
-  border-left-width: 1.5em;
-  border-right-color: transparent;
-  box-shadow: -10px 1px 10px #000a;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  position: relative;
 }
 
-.ribbon .ribbon-content:before,
-.ribbon .ribbon-content:after {
+.section-heading::after {
   content: "";
-  position: absolute;
   display: block;
-  border-style: solid;
-  border-color: #4286f4 transparent transparent transparent;
-  bottom: -1em;
-}
-.ribbon .ribbon-content:before {
-  left: 0;
-  border-width: 1em 0 0 1em;
-}
-.ribbon .ribbon-content:after {
-  right: 0;
-  border-width: 1em 1em 0 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #6c63ff, #00d4aa);
+  margin: 0.4em auto 0;
+  border-radius: 2px;
 }
