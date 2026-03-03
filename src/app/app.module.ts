@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { DragScrollModule } from "ngx-drag-scroll";
+
 import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 
@@ -26,7 +26,7 @@ import { AnimateOnScrollDirective } from "./animate-on-scroll.directive";
     ResumeComponent,
     AnimateOnScrollDirective,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, DragScrollModule],
+  imports: [BrowserModule, BrowserAnimationsModule],
   providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent],
 })

@@ -1,35 +1,18 @@
 <div id="technology">
   <h1>
     <div class="tech">TECHNOLOGIES</div>
-
-    <div class="worked" style="margin-top: 10vh">I'VE WORKED WITH...</div>
+    <div class="worked">I'VE WORKED WITH...</div>
   </h1>
-  <drag-scroll
-    #nav
-    class="draggable"
-    (mousedown)="interaction()"
-    (swipeleft)="interaction()"
-    (click)="interaction()"
-  >
+  <div class="tech-grid">
     <div
-      class="swipe-notify"
-      [ngClass]="{
-        'swipe-notify': hideSwipe == false,
-        hide: hideSwipe == true
-      }"
+      *ngFor="let tech of technologies; let i = index"
+      class="tech-card"
+      [style.animation-delay]="i * 0.07 + 's'"
     >
-      <img
-        class="slide"
-        src="../../../assets/Swipe-Left.png"
-        alt="swipe left"
-      />
-    </div>
-    <ng-container *ngFor="let icon of icons">
-      <div drag-scroll-item>
-        <div class="icon" [ngStyle]="{ 'background-color': icon[1] }">
-          <i [ngClass]="icon[0]"></i>
-        </div>
+      <div class="tech-icon" [ngStyle]="{ 'background-color': tech.color }">
+        <i [ngClass]="tech.icon"></i>
       </div>
-    </ng-container>
-  </drag-scroll>
+      <span class="tech-name">{{ tech.name }}</span>
+    </div>
+  </div>
 </div>
