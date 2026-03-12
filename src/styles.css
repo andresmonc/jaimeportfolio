@@ -8,7 +8,7 @@ section:before {
 
 /* Mobile Settings */
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 820px) {
   :root {
     --mobile-show: block;
     --desktop-show: none;
@@ -36,7 +36,7 @@ section:before {
 
 /* Desktop/Tablet Settings */
 
-@media only screen and (min-width: 735px) {
+@media only screen and (min-width: 820px) {
   :root {
     --mobile-show: none;
     --desktop-show: block;
